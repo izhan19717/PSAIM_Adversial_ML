@@ -1,0 +1,19 @@
+{
+  "results_dir": "experiments/data/results/c4_reward_drift_v2",
+  "seeds": 10,
+  "reward_train_episodes": 100,
+  "reward_eval_episodes": 8,
+  "reward_horizon": 96,
+  "drift_train_episodes": 500,
+  "drift_eval_episodes": 8,
+  "drift_horizon": 480,
+  "queue_capacity": 12,
+  "visible_queue": 5,
+  "alternating_block": 24,
+  "tracking_uri": "http://127.0.0.1:5001",
+  "experiment_name": "cisose-rl-proxy-evaluation",
+  "run_name": "c4_reward_drift_v2",
+  "use_mlflow": true,
+  "skip_reward": false,
+  "skip_drift": false
+}

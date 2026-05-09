@@ -1,0 +1,14 @@
+{
+  "results_dir": "experiments/data/results/c4_action_distribution_v2_clean_baseline",
+  "seeds": 10,
+  "train_episodes": 100,
+  "eval_episodes": 8,
+  "horizon": 96,
+  "queue_capacity": 12,
+  "visible_queue": 5,
+  "alternating_block": 24,
+  "tracking_uri": "http://127.0.0.1:5001",
+  "experiment_name": "cisose-rl-proxy-evaluation",
+  "run_name": "c4_duration_misreport_action_distribution_v2_clean_baseline",
+  "use_mlflow": true
+}

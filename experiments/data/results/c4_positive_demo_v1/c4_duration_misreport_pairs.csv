@@ -1,0 +1,7 @@
+severity,comparison,metric,paired_diff_mean_ci,status
+low,Simplified PSAIM - SJF,average_slowdown,"-2.352 [-2.538, -2.170]",PSAIM lower
+low,Simplified PSAIM - SJF,degradation_pct,"-34.807 [-41.848, -27.322]",PSAIM lower
+medium,Simplified PSAIM - SJF,average_slowdown,"-2.789 [-2.917, -2.645]",PSAIM lower
+medium,Simplified PSAIM - SJF,degradation_pct,"-45.729 [-51.911, -39.465]",PSAIM lower
+high,Simplified PSAIM - SJF,average_slowdown,"-2.802 [-2.944, -2.636]",PSAIM lower
+high,Simplified PSAIM - SJF,degradation_pct,"-46.261 [-51.709, -40.302]",PSAIM lower

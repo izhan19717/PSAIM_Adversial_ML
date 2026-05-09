@@ -1,0 +1,6 @@
+| experiment                          | scenario                 | severity | comparison             | metric              | paired_diff_mean_ci     | status                 |
+| ----------------------------------- | ------------------------ | -------- | ---------------------- | ------------------- | ----------------------- | ---------------------- |
+| reward_corruption_online_adaptation | reward_corruption_online | high     | Simplified PSAIM - DQN | average_slowdown    | -0.092 [-0.167, -0.012] | Simplified PSAIM lower |
+| reward_corruption_online_adaptation | reward_corruption_online | high     | Simplified PSAIM - DQN | degradation_pct     | 0.812 [-9.835, 13.499]  | not decisive           |
+| reward_corruption_online_adaptation | reward_corruption_online | high     | Simplified PSAIM - DQN | task_failure_rate   | -0.004 [-0.009, 0.002]  | not decisive           |
+| reward_corruption_online_adaptation | reward_corruption_online | high     | Simplified PSAIM - DQN | p95_completion_time | -0.534 [-1.853, 1.066]  | not decisive           |

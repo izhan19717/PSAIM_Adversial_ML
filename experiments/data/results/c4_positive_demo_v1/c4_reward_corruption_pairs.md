@@ -1,0 +1,6 @@
+| comparison             | metric              | paired_diff_mean_ci       | status       |
+| ---------------------- | ------------------- | ------------------------- | ------------ |
+| Simplified PSAIM - DQN | average_slowdown    | 2.049 [-2.424, 6.194]     | not decisive |
+| Simplified PSAIM - DQN | degradation_pct     | 78.111 [-64.821, 206.164] | not decisive |
+| Simplified PSAIM - DQN | task_failure_rate   | 0.136 [-0.122, 0.373]     | not decisive |
+| Simplified PSAIM - DQN | p95_completion_time | 5.381 [-9.697, 19.425]    | not decisive |
