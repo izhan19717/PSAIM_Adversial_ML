@@ -1,0 +1,17 @@
+{
+  "runtime": {
+    "seeds": 10,
+    "train_episodes": 100,
+    "eval_episodes": 8,
+    "horizon": 96,
+    "queue_capacity": 12,
+    "visible_queue": 5,
+    "alternating_block": 24,
+    "use_mlflow": true,
+    "tracking_uri": "http://127.0.0.1:5001",
+    "experiment_name": "cisose-rl-proxy-evaluation",
+    "eval_adapt": false,
+    "paper_revision": "proxy-study-v1"
+  },
+  "output_dir": "experiments/data/results/c6_signal_switch_exact_exp2_v1"
+}

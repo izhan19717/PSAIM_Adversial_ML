@@ -1,0 +1,211 @@
+allocate_rate,defer_rate,reject_rate,allocate_count,defer_count,reject_count,total_actions,experiment,scenario,severity,severity_rank,method,method_label,seed
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,0
+0.82421875,0.0768229166666666,0.0989583333333333,633.0,59.0,76.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),0
+0.7513020833333334,0.0703125,0.1783854166666666,577.0,54.0,137.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),0
+0.7578125,0.0768229166666666,0.1653645833333333,582.0,59.0,127.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),0
+0.6731770833333334,0.05859375,0.2682291666666667,517.0,45.0,206.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),0
+0.8033854166666666,0.00390625,0.1927083333333333,617.0,3.0,148.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,0
+0.8333333333333334,0.0,0.1666666666666666,640.0,0.0,128.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,0
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,0
+0.8216145833333334,0.08203125,0.0963541666666666,631.0,63.0,74.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),0
+0.75390625,0.0807291666666666,0.1653645833333333,579.0,62.0,127.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),0
+0.7278645833333334,0.078125,0.1940104166666666,559.0,60.0,149.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),0
+0.7083333333333334,0.07421875,0.2174479166666666,544.0,57.0,167.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),0
+0.8268229166666666,0.0065104166666666,0.1666666666666666,635.0,5.0,128.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,0
+0.8411458333333334,0.0013020833333333,0.1575520833333333,646.0,1.0,121.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,0
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,0
+0.8203125,0.08203125,0.09765625,630.0,63.0,75.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),0
+0.7513020833333334,0.0807291666666666,0.16796875,577.0,62.0,129.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),0
+0.75,0.0729166666666666,0.1770833333333333,576.0,56.0,136.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),0
+0.6822916666666666,0.06640625,0.2513020833333333,524.0,51.0,193.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),0
+0.7916666666666666,0.0013020833333333,0.20703125,608.0,1.0,159.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,0
+0.8424479166666666,0.0013020833333333,0.15625,647.0,1.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,0
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,1
+0.81640625,0.0768229166666666,0.1067708333333333,627.0,59.0,82.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),1
+0.7552083333333334,0.0768229166666666,0.16796875,580.0,59.0,129.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),1
+0.76171875,0.0768229166666666,0.1614583333333333,585.0,59.0,124.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),1
+0.6783854166666666,0.0520833333333333,0.26953125,521.0,40.0,207.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),1
+0.7955729166666666,0.0026041666666666,0.2018229166666666,611.0,2.0,155.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,1
+0.83984375,0.00390625,0.15625,645.0,3.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,1
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,1
+0.81640625,0.0794270833333333,0.1041666666666666,627.0,61.0,80.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),1
+0.7408854166666666,0.0794270833333333,0.1796875,569.0,61.0,138.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),1
+0.7356770833333334,0.07421875,0.1901041666666666,565.0,57.0,146.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),1
+0.6953125,0.078125,0.2265625,534.0,60.0,174.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),1
+0.83984375,0.00390625,0.15625,645.0,3.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,1
+0.8372395833333334,0.00390625,0.1588541666666666,643.0,3.0,122.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,1
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,1
+0.82421875,0.0807291666666666,0.0950520833333333,633.0,62.0,73.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),1
+0.7513020833333334,0.0807291666666666,0.16796875,577.0,62.0,129.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),1
+0.7213541666666666,0.0716145833333333,0.20703125,554.0,55.0,159.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),1
+0.6888020833333334,0.0703125,0.2408854166666666,529.0,54.0,185.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),1
+0.83984375,0.00390625,0.15625,645.0,3.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,1
+0.7942708333333334,0.0052083333333333,0.2005208333333333,610.0,4.0,154.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,1
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,2
+0.8098958333333334,0.0807291666666666,0.109375,622.0,62.0,84.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),2
+0.7447916666666666,0.0716145833333333,0.18359375,572.0,55.0,141.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),2
+0.765625,0.0690104166666666,0.1653645833333333,588.0,53.0,127.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),2
+0.67578125,0.0611979166666666,0.2630208333333333,519.0,47.0,202.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),2
+0.8385416666666666,0.0052083333333333,0.15625,644.0,4.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,2
+0.82421875,0.0026041666666666,0.1731770833333333,633.0,2.0,133.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,2
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,2
+0.8151041666666666,0.0807291666666666,0.1041666666666666,626.0,62.0,80.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),2
+0.75390625,0.0833333333333333,0.1627604166666666,579.0,64.0,125.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),2
+0.7434895833333334,0.0807291666666666,0.17578125,571.0,62.0,135.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),2
+0.67578125,0.0690104166666666,0.2552083333333333,519.0,53.0,196.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),2
+0.8411458333333334,0.0026041666666666,0.15625,646.0,2.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,2
+0.8385416666666666,0.0026041666666666,0.1588541666666666,644.0,2.0,122.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,2
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,2
+0.8046875,0.0807291666666666,0.1145833333333333,618.0,62.0,88.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),2
+0.76953125,0.0807291666666666,0.1497395833333333,591.0,62.0,115.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),2
+0.7565104166666666,0.0794270833333333,0.1640625,581.0,61.0,126.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),2
+0.6861979166666666,0.0677083333333333,0.24609375,527.0,52.0,189.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),2
+0.8424479166666666,0.0013020833333333,0.15625,647.0,1.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,2
+0.8424479166666666,0.0013020833333333,0.15625,647.0,1.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,2
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,3
+0.8268229166666666,0.078125,0.0950520833333333,635.0,60.0,73.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),3
+0.72265625,0.078125,0.19921875,555.0,60.0,153.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),3
+0.7239583333333334,0.078125,0.1979166666666666,556.0,60.0,152.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),3
+0.68359375,0.0572916666666666,0.2591145833333333,525.0,44.0,199.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),3
+0.8411458333333334,0.0026041666666666,0.15625,646.0,2.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,3
+0.83984375,0.00390625,0.15625,645.0,3.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,3
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,3
+0.8294270833333334,0.078125,0.0924479166666666,637.0,60.0,71.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),3
+0.7369791666666666,0.0755208333333333,0.1875,566.0,58.0,144.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),3
+0.7408854166666666,0.078125,0.1809895833333333,569.0,60.0,139.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),3
+0.6666666666666666,0.0755208333333333,0.2578125,512.0,58.0,198.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),3
+0.83984375,0.00390625,0.15625,645.0,3.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,3
+0.8385416666666666,0.0065104166666666,0.1549479166666666,644.0,5.0,119.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,3
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,3
+0.81640625,0.078125,0.10546875,627.0,60.0,81.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),3
+0.7513020833333334,0.0794270833333333,0.1692708333333333,577.0,61.0,130.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),3
+0.7291666666666666,0.078125,0.1927083333333333,560.0,60.0,148.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),3
+0.6731770833333334,0.0572916666666666,0.26953125,517.0,44.0,207.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),3
+0.7955729166666666,0.00390625,0.2005208333333333,611.0,3.0,154.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,3
+0.8411458333333334,0.0026041666666666,0.15625,646.0,2.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,3
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,4
+0.8216145833333334,0.0768229166666666,0.1015625,631.0,59.0,78.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),4
+0.7408854166666666,0.0755208333333333,0.18359375,569.0,58.0,141.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),4
+0.7330729166666666,0.0716145833333333,0.1953125,563.0,55.0,150.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),4
+0.6861979166666666,0.06640625,0.2473958333333333,527.0,51.0,190.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),4
+0.8424479166666666,0.0026041666666666,0.1549479166666666,647.0,2.0,119.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,4
+0.8411458333333334,0.0026041666666666,0.15625,646.0,2.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,4
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,4
+0.8190104166666666,0.0794270833333333,0.1015625,629.0,61.0,78.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),4
+0.7526041666666666,0.0807291666666666,0.1666666666666666,578.0,62.0,128.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),4
+0.7486979166666666,0.078125,0.1731770833333333,575.0,60.0,133.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),4
+0.7057291666666666,0.0703125,0.2239583333333333,542.0,54.0,172.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),4
+0.8411458333333334,0.00390625,0.1549479166666666,646.0,3.0,119.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,4
+0.7955729166666666,0.0013020833333333,0.203125,611.0,1.0,156.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,4
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,4
+0.8268229166666666,0.0794270833333333,0.09375,635.0,61.0,72.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),4
+0.75,0.0794270833333333,0.1705729166666666,576.0,61.0,131.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),4
+0.7486979166666666,0.0794270833333333,0.171875,575.0,61.0,132.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),4
+0.6848958333333334,0.0546875,0.2604166666666667,526.0,42.0,200.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),4
+0.8411458333333334,0.0013020833333333,0.1575520833333333,646.0,1.0,121.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,4
+0.8424479166666666,0.00390625,0.1536458333333333,647.0,3.0,118.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,4
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,5
+0.8216145833333334,0.0768229166666666,0.1015625,631.0,59.0,78.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),5
+0.7473958333333334,0.0729166666666666,0.1796875,574.0,56.0,138.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),5
+0.73828125,0.0768229166666666,0.1848958333333333,567.0,59.0,142.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),5
+0.6848958333333334,0.0625,0.2526041666666667,526.0,48.0,194.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),5
+0.83984375,0.0026041666666666,0.1575520833333333,645.0,2.0,121.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,5
+0.8411458333333334,0.0026041666666666,0.15625,646.0,2.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,5
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,5
+0.8268229166666666,0.0807291666666666,0.0924479166666666,635.0,62.0,71.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),5
+0.7747395833333334,0.078125,0.1471354166666666,595.0,60.0,113.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),5
+0.7526041666666666,0.0794270833333333,0.16796875,578.0,61.0,129.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),5
+0.6653645833333334,0.0703125,0.2643229166666667,511.0,54.0,203.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),5
+0.7903645833333334,0.0,0.2096354166666666,607.0,0.0,161.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,5
+0.8372395833333334,0.0078125,0.1549479166666666,643.0,6.0,119.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,5
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,5
+0.8138020833333334,0.0794270833333333,0.1067708333333333,625.0,61.0,82.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),5
+0.73828125,0.0755208333333333,0.1861979166666666,567.0,58.0,143.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),5
+0.7239583333333334,0.0794270833333333,0.1966145833333333,556.0,61.0,151.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),5
+0.7083333333333334,0.078125,0.2135416666666666,544.0,60.0,164.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),5
+0.8385416666666666,0.0052083333333333,0.15625,644.0,4.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,5
+0.8268229166666666,0.0052083333333333,0.16796875,635.0,4.0,129.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,5
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,6
+0.8151041666666666,0.07421875,0.1106770833333333,626.0,57.0,85.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),6
+0.7591145833333334,0.0768229166666666,0.1640625,583.0,59.0,126.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),6
+0.7408854166666666,0.0729166666666666,0.1861979166666666,569.0,56.0,143.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),6
+0.6861979166666666,0.0572916666666666,0.2565104166666667,527.0,44.0,197.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),6
+0.7994791666666666,0.0026041666666666,0.1979166666666666,614.0,2.0,152.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,6
+0.8385416666666666,0.0065104166666666,0.1549479166666666,644.0,5.0,119.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,6
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,6
+0.7877604166666666,0.0807291666666666,0.1315104166666666,605.0,62.0,101.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),6
+0.7578125,0.0768229166666666,0.1653645833333333,582.0,59.0,127.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),6
+0.7630208333333334,0.08203125,0.1549479166666666,586.0,63.0,119.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),6
+0.67578125,0.0807291666666666,0.2434895833333333,519.0,62.0,187.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),6
+0.8411458333333334,0.00390625,0.1549479166666666,646.0,3.0,119.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,6
+0.8411458333333334,0.0013020833333333,0.1575520833333333,646.0,1.0,121.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,6
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,6
+0.8151041666666666,0.0807291666666666,0.1041666666666666,626.0,62.0,80.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),6
+0.7604166666666666,0.0794270833333333,0.16015625,584.0,61.0,123.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),6
+0.73828125,0.0755208333333333,0.1861979166666666,567.0,58.0,143.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),6
+0.6822916666666666,0.0651041666666666,0.2526041666666667,524.0,50.0,194.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),6
+0.8411458333333334,0.0026041666666666,0.15625,646.0,2.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,6
+0.8385416666666666,0.0026041666666666,0.1588541666666666,644.0,2.0,122.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,6
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,7
+0.8098958333333334,0.0755208333333333,0.1145833333333333,622.0,58.0,88.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),7
+0.7526041666666666,0.0833333333333333,0.1640625,578.0,64.0,126.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),7
+0.7786458333333334,0.0768229166666666,0.14453125,598.0,59.0,111.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),7
+0.6901041666666666,0.0625,0.2473958333333333,530.0,48.0,190.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),7
+0.7981770833333334,0.0052083333333333,0.1966145833333333,613.0,4.0,151.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,7
+0.8385416666666666,0.0052083333333333,0.15625,644.0,4.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,7
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,7
+0.8294270833333334,0.0807291666666666,0.08984375,637.0,62.0,69.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),7
+0.7369791666666666,0.0768229166666666,0.1861979166666666,566.0,59.0,143.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),7
+0.7408854166666666,0.0768229166666666,0.1822916666666666,569.0,59.0,140.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),7
+0.6653645833333334,0.0690104166666666,0.265625,511.0,53.0,204.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),7
+0.8359375,0.0052083333333333,0.1588541666666666,642.0,4.0,122.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,7
+0.8411458333333334,0.0026041666666666,0.15625,646.0,2.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,7
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,7
+0.8046875,0.08203125,0.11328125,618.0,63.0,87.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),7
+0.7330729166666666,0.07421875,0.1927083333333333,563.0,57.0,148.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),7
+0.7486979166666666,0.078125,0.1731770833333333,575.0,60.0,133.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),7
+0.68359375,0.06640625,0.25,525.0,51.0,192.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),7
+0.8372395833333334,0.0065104166666666,0.15625,643.0,5.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,7
+0.80078125,0.0065104166666666,0.1927083333333333,615.0,5.0,148.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,7
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,8
+0.8346354166666666,0.0729166666666666,0.0924479166666666,641.0,56.0,71.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),8
+0.75,0.0794270833333333,0.1705729166666666,576.0,61.0,131.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),8
+0.7591145833333334,0.0768229166666666,0.1640625,583.0,59.0,126.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),8
+0.7005208333333334,0.0625,0.2369791666666666,538.0,48.0,182.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),8
+0.828125,0.0026041666666666,0.1692708333333333,636.0,2.0,130.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,8
+0.8424479166666666,0.0,0.1575520833333333,647.0,0.0,121.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,8
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,8
+0.8359375,0.078125,0.0859375,642.0,60.0,66.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),8
+0.7278645833333334,0.0807291666666666,0.19140625,559.0,62.0,147.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),8
+0.7291666666666666,0.0794270833333333,0.19140625,560.0,61.0,147.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),8
+0.6848958333333334,0.0703125,0.2447916666666666,526.0,54.0,188.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),8
+0.8424479166666666,0.0013020833333333,0.15625,647.0,1.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,8
+0.8411458333333334,0.0026041666666666,0.15625,646.0,2.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,8
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,8
+0.8190104166666666,0.0794270833333333,0.1015625,629.0,61.0,78.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),8
+0.74609375,0.0807291666666666,0.1731770833333333,573.0,62.0,133.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),8
+0.73046875,0.078125,0.19140625,561.0,60.0,147.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),8
+0.6731770833333334,0.0625,0.2643229166666667,517.0,48.0,203.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),8
+0.8255208333333334,0.0065104166666666,0.16796875,634.0,5.0,129.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,8
+0.83984375,0.0026041666666666,0.1575520833333333,645.0,2.0,121.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,8
+0.9270833333333334,0.0729166666666666,0.0,712.0,56.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,9
+0.828125,0.0755208333333333,0.0963541666666666,636.0,58.0,74.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),9
+0.75390625,0.078125,0.16796875,579.0,60.0,129.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),9
+0.7591145833333334,0.0729166666666666,0.16796875,583.0,56.0,129.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),9
+0.7174479166666666,0.07421875,0.2083333333333333,551.0,57.0,160.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),9
+0.7981770833333334,0.0065104166666666,0.1953125,613.0,5.0,150.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,9
+0.8411458333333334,0.0026041666666666,0.15625,646.0,2.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,9
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,9
+0.8203125,0.0768229166666666,0.1028645833333333,630.0,59.0,79.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),9
+0.7278645833333334,0.0755208333333333,0.1966145833333333,559.0,58.0,151.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),9
+0.7317708333333334,0.078125,0.1901041666666666,562.0,60.0,146.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),9
+0.6966145833333334,0.07421875,0.2291666666666666,535.0,57.0,176.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),9
+0.8385416666666666,0.0052083333333333,0.15625,644.0,4.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,9
+0.8294270833333334,0.0026041666666666,0.16796875,637.0,2.0,129.0,768.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,9
+0.9166666666666666,0.0833333333333333,0.0,704.0,64.0,0.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,9
+0.8255208333333334,0.0794270833333333,0.0950520833333333,634.0,61.0,73.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),9
+0.7395833333333334,0.0794270833333333,0.1809895833333333,568.0,61.0,139.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),9
+0.7330729166666666,0.078125,0.1888020833333333,563.0,60.0,145.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),9
+0.69140625,0.0638020833333333,0.2447916666666666,531.0,49.0,188.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),9
+0.8424479166666666,0.0013020833333333,0.15625,647.0,1.0,120.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,9
+0.8385416666666666,0.00390625,0.1575520833333333,644.0,3.0,121.0,768.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,9

@@ -1,0 +1,211 @@
+average_slowdown,mean_completion_time,p95_completion_time,utilization,task_failure_rate,tasks_arrived,tasks_failed,experiment,scenario,severity,severity_rank,method,method_label,seed
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,0
+4.711024305555555,16.401041666666664,61.75,0.5165201822916666,0.2877604166666667,96.0,27.625,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),0
+4.742513020833333,17.216145833333336,77.5625,0.4690755208333333,0.3059895833333333,96.0,29.375,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),0
+4.691037326388889,16.9609375,71.96875,0.4774576822916666,0.3059895833333333,96.0,29.375,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),0
+5.321831597222221,19.657552083333336,82.25,0.4107259114583333,0.3411458333333333,96.0,32.75,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),0
+3.596115451388889,13.505208333333332,73.625,0.5563151041666667,0.2174479166666666,96.0,20.875,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,0
+3.3640625,12.395833333333334,71.5,0.5813802083333334,0.1875,96.0,18.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,0
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,0
+5.147677951388889,17.50390625,59.5625,0.5039876302083333,0.3072916666666667,96.0,29.5,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),0
+5.214822048611111,18.477864583333336,79.0,0.4779459635416666,0.3177083333333333,96.0,30.5,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),0
+5.529101562499999,19.647135416666668,77.40625,0.4469401041666666,0.3489583333333333,96.0,33.5,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),0
+5.332378472222223,19.283854166666664,82.4375,0.4503580729166666,0.3307291666666666,96.0,31.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),0
+3.3801649305555554,12.526041666666668,71.5,0.5796712239583333,0.1940104166666666,96.0,18.625,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,0
+3.021614583333333,11.41796875,65.5,0.5904134114583334,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,0
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,0
+5.098741319444445,17.381510416666668,63.1875,0.5135904947916666,0.3072916666666667,96.0,29.5,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),0
+5.195572916666666,18.30859375,77.5,0.4854329427083333,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),0
+5.135915798611111,18.36848958333333,75.1875,0.4732259114583333,0.3216145833333333,96.0,30.875,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),0
+5.590690104166667,20.225260416666668,85.4375,0.4414876302083333,0.3489583333333333,96.0,33.5,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),0
+3.655056423611111,13.811197916666668,73.875,0.5442708333333334,0.2252604166666666,96.0,21.625,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,0
+3.0173611111111107,11.377604166666666,65.5,0.589599609375,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,0
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,1
+4.995030381944444,17.178385416666664,62.15625,0.5032552083333334,0.3098958333333333,96.0,29.75,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),1
+4.603884548611111,16.787760416666664,75.34375,0.485595703125,0.2955729166666666,96.0,28.375,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),1
+4.875238715277778,17.454427083333336,78.3125,0.48193359375,0.3046875,96.0,29.25,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),1
+5.188454861111111,19.403645833333336,82.3125,0.408935546875,0.3359375,96.0,32.25,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),1
+3.6564019097222222,13.768229166666668,74.375,0.548583984375,0.22265625,96.0,21.375,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,1
+3.0493272569444443,11.419270833333332,65.5,0.5928548177083334,0.1809895833333333,96.0,17.375,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,1
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,1
+5.028450520833333,17.43359375,68.0,0.5016276041666667,0.30859375,96.0,29.625,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),1
+5.313975694444444,18.912760416666668,79.5625,0.460693359375,0.3255208333333333,96.0,31.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),1
+5.103493923611111,18.475260416666668,79.6875,0.461181640625,0.3216145833333333,96.0,30.875,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),1
+5.4623046875000005,19.80598958333333,84.875,0.4405110677083333,0.34375,96.0,33.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),1
+3.0892578125,11.537760416666668,65.5,0.5909830729166667,0.1809895833333333,96.0,17.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,1
+3.1178385416666665,11.6484375,66.25,0.5900065104166667,0.1809895833333333,96.0,17.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,1
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,1
+5.374153645833333,18.069010416666664,64.53125,0.5042317708333333,0.3138020833333333,96.0,30.125,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),1
+5.045355902777779,18.01953125,74.875,0.478515625,0.30859375,96.0,29.625,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),1
+5.341384548611111,19.248697916666668,80.09375,0.4581705729166667,0.3294270833333333,96.0,31.625,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),1
+5.2861328125,19.221354166666668,82.4375,0.4459635416666666,0.3372395833333333,96.0,32.375,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),1
+3.058723958333333,11.467447916666666,65.5,0.591064453125,0.1809895833333333,96.0,17.375,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,1
+3.707204861111111,13.70703125,72.875,0.5625,0.2200520833333333,96.0,21.125,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,1
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,2
+4.9048828125,16.920572916666668,63.8125,0.5118001302083334,0.2981770833333333,96.0,28.625,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),2
+4.842708333333333,17.440104166666664,77.9375,0.471435546875,0.30859375,96.0,29.625,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),2
+4.842621527777777,17.505208333333332,72.90625,0.480712890625,0.3046875,96.0,29.25,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),2
+5.259309895833334,19.572916666666664,82.375,0.40869140625,0.3411458333333333,96.0,32.75,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),2
+3.088259548611111,11.5703125,65.5,0.5880533854166666,0.1822916666666666,96.0,17.5,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,2
+3.4516927083333333,12.263020833333334,67.375,0.5896809895833334,0.1966145833333333,96.0,18.875,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,2
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,2
+5.269509548611111,18.018229166666664,70.4375,0.5021158854166667,0.31640625,96.0,30.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),2
+5.111263020833333,18.1953125,75.09375,0.4742024739583333,0.3177083333333333,96.0,30.5,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),2
+5.272352430555555,18.78125,76.5,0.4696451822916666,0.3307291666666667,96.0,31.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),2
+5.619401041666666,20.291666666666668,82.3125,0.425537109375,0.3567708333333333,96.0,34.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),2
+3.0783203125,11.50390625,65.5,0.5914713541666667,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,2
+3.065538194444444,11.46875,65.5,0.59228515625,0.1809895833333333,96.0,17.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,2
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,2
+5.034526909722223,17.403645833333336,65.3125,0.502197265625,0.3072916666666667,96.0,29.5,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),2
+5.141449652777778,18.04427083333333,74.875,0.475830078125,0.3138020833333333,96.0,30.125,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),2
+5.226649305555555,18.536458333333336,75.09375,0.4822591145833333,0.3203125,96.0,30.75,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),2
+5.654361979166667,20.1015625,85.125,0.4436848958333333,0.3424479166666666,96.0,32.875,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),2
+3.015277777777777,11.35546875,65.5,0.5921223958333334,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,2
+3.0139105902777774,11.354166666666666,65.5,0.591796875,0.1770833333333333,96.0,17.0,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,2
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,3
+4.8473090277777775,16.69921875,61.96875,0.5172526041666666,0.2942708333333333,96.0,28.25,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),3
+5.153971354166667,18.584635416666664,79.0,0.45068359375,0.3255208333333333,96.0,31.25,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),3
+4.940299479166667,17.9453125,76.90625,0.449462890625,0.3177083333333333,96.0,30.5,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),3
+5.1506944444444445,19.360677083333336,82.59375,0.4134928385416667,0.3333333333333333,96.0,32.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),3
+3.0553602430555555,11.48046875,65.5,0.5901692708333334,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,3
+3.1050998263888885,11.565104166666668,66.1875,0.5912272135416667,0.1809895833333333,96.0,17.375,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,3
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,3
+5.203038194444445,17.734375,64.0,0.502197265625,0.31640625,96.0,30.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),3
+5.161892361111111,18.4921875,76.5625,0.456787109375,0.3307291666666667,96.0,31.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),3
+5.094032118055556,18.287760416666668,79.125,0.470703125,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),3
+5.495941840277778,20.272135416666668,83.125,0.416259765625,0.3658854166666667,96.0,35.125,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),3
+3.0690104166666665,11.50390625,65.65625,0.5879720052083333,0.1809895833333333,96.0,17.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,3
+3.0878038194444444,11.540364583333332,64.90625,0.5887858072916666,0.1822916666666666,96.0,17.5,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,3
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,3
+5.248133680555556,17.967447916666668,67.84375,0.5022786458333334,0.30859375,96.0,29.625,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),3
+5.082161458333333,18.217447916666664,79.3125,0.479736328125,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),3
+5.317144097222222,19.1015625,83.53125,0.4622395833333333,0.32421875,96.0,31.125,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),3
+5.654383680555556,20.19921875,84.375,0.4409993489583333,0.3502604166666666,96.0,33.625,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),3
+3.658572048611111,13.78125,73.875,0.545166015625,0.2239583333333333,96.0,21.5,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,3
+3.058615451388889,11.4609375,65.5,0.5911458333333334,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,3
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,4
+4.834526909722221,16.705729166666668,61.1875,0.5091959635416667,0.2994791666666666,96.0,28.75,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),4
+4.968880208333333,17.932291666666664,79.9375,0.4759114583333333,0.3033854166666667,96.0,29.125,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),4
+4.988606770833334,18.350260416666664,79.15625,0.4540201822916666,0.3216145833333333,96.0,30.875,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),4
+5.1015625,19.12109375,81.0625,0.4161783854166667,0.3372395833333333,96.0,32.375,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),4
+3.0418619791666663,11.428385416666668,65.5,0.5916341145833334,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,4
+3.072439236111111,11.515625,65.5,0.5909830729166667,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,4
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,4
+5.290972222222222,17.963541666666664,63.46875,0.5078125,0.3151041666666666,96.0,30.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),4
+5.028342013888889,17.946614583333332,75.3125,0.4715983072916666,0.31640625,96.0,30.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),4
+5.2867621527777775,18.696614583333336,77.8125,0.4672037760416667,0.3307291666666666,96.0,31.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),4
+5.406684027777778,19.390625,80.40625,0.4534505208333333,0.3372395833333333,96.0,32.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),4
+3.08203125,11.536458333333332,66.03125,0.58984375,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,4
+3.6514322916666666,13.703125,73.9375,0.5509440104166667,0.2161458333333333,96.0,20.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,4
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,4
+5.243142361111111,17.717447916666664,61.5625,0.509765625,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),4
+4.863932291666667,17.610677083333336,78.5625,0.4827473958333333,0.3072916666666667,96.0,29.5,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),4
+5.117686631944444,18.108072916666664,75.25,0.473876953125,0.3190104166666667,96.0,30.625,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),4
+5.347764756944445,19.58723958333333,82.1875,0.4423828125,0.33984375,96.0,32.625,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),4
+3.0892795138888887,11.541666666666668,66.25,0.592529296875,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,4
+3.023090277777777,11.368489583333332,65.5,0.5913899739583334,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,4
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,5
+4.832291666666666,16.796875,62.28125,0.5110677083333333,0.2916666666666666,96.0,28.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),5
+4.850368923611112,17.509114583333336,74.71875,0.4724934895833333,0.3046875,96.0,29.25,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),5
+4.77751736111111,17.62890625,75.0625,0.4632975260416667,0.3072916666666666,96.0,29.5,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),5
+5.373046875,19.680989583333336,81.0,0.4088541666666666,0.34375,96.0,33.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),5
+3.0755425347222216,11.514322916666668,66.25,0.5924479166666667,0.1809895833333333,96.0,17.375,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,5
+3.0619357638888887,11.475260416666666,65.65625,0.59130859375,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,5
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,5
+5.089279513888889,17.4140625,62.0,0.510498046875,0.3072916666666666,96.0,29.5,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),5
+5.306553819444445,18.533854166666664,77.625,0.4812825520833333,0.3216145833333333,96.0,30.875,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),5
+4.948003472222222,17.763020833333336,77.0,0.4810384114583333,0.31640625,96.0,30.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),5
+5.667100694444445,20.615885416666664,85.4375,0.4185384114583333,0.3658854166666667,96.0,35.125,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),5
+3.699544270833333,13.924479166666668,74.4375,0.5432942708333333,0.2252604166666666,96.0,21.625,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,5
+3.091796875,11.561197916666668,65.65625,0.5887858072916667,0.18359375,96.0,17.625,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,5
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,5
+4.997113715277777,17.18359375,62.96875,0.5067545572916667,0.3046875,96.0,29.25,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),5
+5.109049479166666,18.369791666666664,76.6875,0.4700520833333333,0.3177083333333333,96.0,30.5,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),5
+5.344162326388889,19.131510416666668,83.53125,0.46630859375,0.3255208333333333,96.0,31.25,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),5
+5.329253472222222,19.154947916666664,83.625,0.460205078125,0.33203125,96.0,31.875,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),5
+3.1121310763888888,11.635416666666666,65.65625,0.5872395833333333,0.1822916666666666,96.0,17.5,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,5
+3.383376736111112,12.608072916666668,71.65625,0.5758463541666667,0.1940104166666666,96.0,18.625,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,5
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,6
+5.065407986111111,17.345052083333336,63.75,0.506591796875,0.3151041666666666,96.0,30.25,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),6
+4.899826388888889,17.643229166666668,76.03125,0.47314453125,0.3098958333333333,96.0,29.75,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),6
+4.981532118055556,18.51692708333333,82.28125,0.4598795572916666,0.30859375,96.0,29.625,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),6
+5.173546006944445,19.235677083333336,80.40625,0.4171549479166666,0.3346354166666666,96.0,32.125,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),6
+3.603255208333333,13.578125,73.03125,0.5511881510416667,0.21875,96.0,21.0,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,6
+3.113997395833333,11.626302083333332,65.3125,0.589111328125,0.1822916666666666,96.0,17.5,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,6
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,6
+5.131618923611112,17.81640625,68.625,0.4930826822916666,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),6
+5.123046875,18.13020833333333,70.75,0.4751790364583333,0.32421875,96.0,31.125,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),6
+5.449457465277778,18.91145833333333,77.0,0.4759114583333333,0.3268229166666666,96.0,31.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),6
+5.510763888888889,20.084635416666664,83.21875,0.4292805989583333,0.3515625,96.0,33.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),6
+3.082942708333333,11.5078125,64.84375,0.591552734375,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,6
+3.047981770833333,11.43359375,65.59375,0.5917154947916667,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,6
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,6
+5.253819444444444,17.802083333333336,62.6875,0.5010579427083334,0.3190104166666666,96.0,30.625,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),6
+5.067491319444445,18.013020833333332,77.375,0.4839680989583333,0.3151041666666667,96.0,30.25,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),6
+5.089995659722222,18.1875,76.5,0.469482421875,0.3177083333333333,96.0,30.5,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),6
+5.4299913194444445,19.7109375,84.03125,0.4484049479166666,0.3359375,96.0,32.25,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),6
+3.0498480902777776,11.436197916666668,65.5,0.5919596354166667,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,6
+3.0805338541666663,11.541666666666668,65.5,0.5900065104166667,0.1822916666666666,96.0,17.5,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,6
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,7
+4.789843749999999,16.985677083333332,68.34375,0.5000813802083334,0.2994791666666667,96.0,28.75,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),7
+4.652756076388888,17.041666666666668,74.875,0.48681640625,0.2981770833333333,96.0,28.625,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),7
+4.890364583333334,17.377604166666664,70.625,0.4822591145833333,0.3059895833333333,96.0,29.375,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),7
+4.884223090277779,18.432291666666664,81.65625,0.418701171875,0.32421875,96.0,31.125,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),7
+3.697547743055556,13.751302083333332,73.5,0.5523274739583334,0.2200520833333333,96.0,21.125,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,7
+3.062217881944445,11.47265625,65.5,0.58984375,0.1822916666666666,96.0,17.5,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,7
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,7
+5.329079861111111,17.967447916666668,66.375,0.5123697916666666,0.3190104166666667,96.0,30.625,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),7
+5.295594618055555,18.934895833333336,77.71875,0.4601236979166666,0.3255208333333333,96.0,31.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),7
+5.063541666666667,18.197916666666664,75.21875,0.469970703125,0.3190104166666666,96.0,30.625,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),7
+5.586284722222223,20.24739583333333,83.9375,0.422119140625,0.3515625,96.0,33.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),7
+3.177039930555556,11.837239583333332,66.25,0.58642578125,0.1848958333333333,96.0,17.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,7
+3.0217013888888884,11.375,65.5625,0.5914713541666667,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,7
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,7
+5.122026909722223,17.604166666666668,71.625,0.5066731770833333,0.3020833333333333,96.0,29.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),7
+5.261002604166666,18.885416666666668,83.375,0.4662272135416666,0.3229166666666667,96.0,31.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),7
+5.123589409722222,18.177083333333336,75.625,0.4744466145833333,0.3229166666666667,96.0,31.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),7
+5.252018229166668,19.2109375,85.125,0.4440104166666666,0.3307291666666666,96.0,31.75,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),7
+3.1173611111111112,11.614583333333332,65.5,0.5894368489583333,0.18359375,96.0,17.625,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,7
+3.6663628472222234,13.657552083333332,74.25,0.5537109375,0.2200520833333333,96.0,21.125,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,7
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,8
+4.84765625,16.735677083333336,61.65625,0.5150553385416666,0.2942708333333333,96.0,28.25,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),8
+5.009722222222223,18.018229166666664,81.78125,0.47509765625,0.3111979166666666,96.0,29.875,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),8
+4.852604166666667,17.544270833333332,73.25,0.47021484375,0.30859375,96.0,29.625,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),8
+4.941015625,18.765625,82.53125,0.4287923177083333,0.3229166666666666,96.0,31.0,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),8
+3.3320095486111114,12.4296875,71.5,0.580078125,0.1927083333333333,96.0,18.5,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,8
+3.0701822916666663,11.484375,66.25,0.5912272135416667,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,8
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,8
+5.1175781250000005,17.436197916666668,62.9375,0.5167643229166666,0.3059895833333333,96.0,29.375,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),8
+5.158897569444445,18.44921875,75.5625,0.4632975260416666,0.3255208333333333,96.0,31.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),8
+4.929557291666667,17.92578125,80.125,0.4729817708333333,0.3098958333333333,96.0,29.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),8
+5.4646484375,19.657552083333336,83.5625,0.4403483072916667,0.3411458333333333,96.0,32.75,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),8
+3.0484592013888885,11.46484375,65.5,0.5904134114583334,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,8
+3.061675347222222,11.473958333333334,65.5,0.5919596354166667,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,8
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,8
+5.206814236111112,17.723958333333332,68.28125,0.5088704427083333,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),8
+5.067361111111111,18.282552083333336,80.1875,0.476806640625,0.3111979166666667,96.0,29.875,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),8
+5.1951171875,18.537760416666664,76.0625,0.4639485677083333,0.3216145833333333,96.0,30.875,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),8
+5.591254340277778,20.1953125,83.125,0.4332682291666666,0.3463541666666667,96.0,33.25,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),8
+3.5749348958333336,12.778645833333332,72.0,0.5836588541666667,0.1940104166666666,96.0,18.625,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,8
+3.1018229166666664,11.557291666666668,65.5,0.5924479166666667,0.1809895833333333,96.0,17.375,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,8
+5.714409722222221,17.614583333333332,39.5,0.544921875,0.3125,96.0,30.0,c5_duration_misreport_mechanism,duration_misreport,low,1,heuristic_sjf_bestfit,SJF best-fit heuristic,9
+4.798328993055555,16.479166666666668,56.71875,0.5143229166666666,0.3046875,96.0,29.25,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p10,SJF-R(0.10),9
+4.975868055555555,17.842447916666664,75.46875,0.467041015625,0.30859375,96.0,29.625,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p17,SJF-R(0.17),9
+4.669661458333334,16.920572916666664,72.96875,0.4788411458333332,0.30078125,96.0,28.875,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p18,SJF-R(0.18),9
+4.959288194444445,18.60286458333333,81.09375,0.439208984375,0.3203125,96.0,30.75,c5_duration_misreport_mechanism,duration_misreport,low,1,sjf_r_0p25,SJF-R(0.25),9
+3.698328993055555,13.71484375,73.4375,0.5606282552083333,0.2278645833333333,96.0,21.875,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_lite,Simplified PSAIM,9
+3.037413194444444,11.419270833333332,65.5,0.59130859375,0.1796875,96.0,17.25,c5_duration_misreport_mechanism,duration_misreport,low,1,psaim_rawvar,PSAIM-RawVar,9
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,heuristic_sjf_bestfit,SJF best-fit heuristic,9
+5.313975694444444,18.075520833333336,68.1875,0.499755859375,0.3190104166666666,96.0,30.625,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p10,SJF-R(0.10),9
+5.319921875,19.01171875,79.8125,0.4612630208333333,0.328125,96.0,31.5,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p17,SJF-R(0.17),9
+5.150520833333333,18.65234375,80.125,0.462646484375,0.3255208333333333,96.0,31.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p18,SJF-R(0.18),9
+5.329383680555556,19.291666666666668,81.15625,0.4439290364583333,0.34375,96.0,33.0,c5_duration_misreport_mechanism,duration_misreport,medium,2,sjf_r_0p25,SJF-R(0.25),9
+3.082400173611111,11.513020833333334,64.8125,0.5887858072916667,0.1822916666666666,96.0,17.5,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_lite,Simplified PSAIM,9
+3.330512152777778,12.419270833333334,71.5,0.5780436197916666,0.1901041666666666,96.0,18.25,c5_duration_misreport_mechanism,duration_misreport,medium,2,psaim_rawvar,PSAIM-RawVar,9
+6.061979166666667,18.375,44.5,0.5475260416666666,0.3541666666666667,96.0,34.0,c5_duration_misreport_mechanism,duration_misreport,high,3,heuristic_sjf_bestfit,SJF best-fit heuristic,9
+5.133506944444444,17.703125,67.875,0.504150390625,0.3072916666666666,96.0,29.5,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p10,SJF-R(0.10),9
+5.425455729166667,19.16927083333333,79.6875,0.46435546875,0.3255208333333333,96.0,31.25,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p17,SJF-R(0.17),9
+5.208723958333334,18.647135416666664,79.8125,0.46435546875,0.3216145833333333,96.0,30.875,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p18,SJF-R(0.18),9
+5.6275390625,19.903645833333336,81.21875,0.4475911458333333,0.34375,96.0,33.0,c5_duration_misreport_mechanism,duration_misreport,high,3,sjf_r_0p25,SJF-R(0.25),9
+3.0256076388888884,11.37890625,65.5,0.5922037760416667,0.1783854166666666,96.0,17.125,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_lite,Simplified PSAIM,9
+3.118489583333333,11.639322916666668,66.25,0.5917154947916667,0.18359375,96.0,17.625,c5_duration_misreport_mechanism,duration_misreport,high,3,psaim_rawvar,PSAIM-RawVar,9

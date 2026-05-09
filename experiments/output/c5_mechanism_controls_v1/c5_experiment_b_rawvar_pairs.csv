@@ -1,0 +1,7 @@
+severity,comparison,metric,paired_diff_mean_ci,status
+low,PSAIM-RawVar - Simplified PSAIM,average_slowdown,"-0.246 [-0.444, -0.029]",RawVar lower
+medium,PSAIM-RawVar - Simplified PSAIM,average_slowdown,"-0.029 [-0.212, 0.161]",draw / CI crosses zero
+high,PSAIM-RawVar - Simplified PSAIM,average_slowdown,"-0.019 [-0.278, 0.236]",draw / CI crosses zero
+low,PSAIM-RawVar - Simplified PSAIM,reject_rate,"-0.019 [-0.032, -0.005]",RawVar lower
+medium,PSAIM-RawVar - Simplified PSAIM,reject_rate,"-0.000 [-0.016, 0.015]",draw / CI crosses zero
+high,PSAIM-RawVar - Simplified PSAIM,reject_rate,"-0.001 [-0.019, 0.016]",draw / CI crosses zero

@@ -1,0 +1,22 @@
+| method           | regime       | metric  | value                    |
+| ---------------- | ------------ | ------- | ------------------------ |
+| PSAIM-RawVar     | high_entropy | V_ale   | NA                       |
+| PSAIM-RawVar     | low_entropy  | V_ale   | NA                       |
+| PSAIM-RawVar     | high_entropy | V_epi   | NA                       |
+| PSAIM-RawVar     | low_entropy  | V_epi   | NA                       |
+| PSAIM-RawVar     | high_entropy | gate_h3 | NA                       |
+| PSAIM-RawVar     | low_entropy  | gate_h3 | NA                       |
+| PSAIM-RawVar     | high_entropy | r_int   | -9.152 [-10.378, -7.733] |
+| PSAIM-RawVar     | low_entropy  | r_int   | -8.211 [-9.448, -6.712]  |
+| PSAIM-RawVar     | high_entropy | raw_var | 1.552 [0.990, 2.177]     |
+| PSAIM-RawVar     | low_entropy  | raw_var | 1.024 [0.672, 1.384]     |
+| Simplified PSAIM | high_entropy | V_ale   | 0.072 [0.071, 0.073]     |
+| Simplified PSAIM | low_entropy  | V_ale   | 0.059 [0.058, 0.060]     |
+| Simplified PSAIM | high_entropy | V_epi   | 0.075 [0.069, 0.082]     |
+| Simplified PSAIM | low_entropy  | V_epi   | 0.035 [0.030, 0.041]     |
+| Simplified PSAIM | high_entropy | gate_h3 | 0.799 [0.777, 0.819]     |
+| Simplified PSAIM | low_entropy  | gate_h3 | 0.906 [0.888, 0.919]     |
+| Simplified PSAIM | high_entropy | r_int   | -0.056 [-0.088, -0.028]  |
+| Simplified PSAIM | low_entropy  | r_int   | -0.009 [-0.026, 0.003]   |
+| Simplified PSAIM | high_entropy | raw_var | NA                       |
+| Simplified PSAIM | low_entropy  | raw_var | NA                       |
