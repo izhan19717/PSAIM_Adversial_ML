@@ -1,0 +1,28 @@
+# Python/runtime artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtual environments and vendored dependencies
+.venv/
+venv/
+env/
+experiments/.deps/
+
+# Local experiment infrastructure state. Final CSV/figure/report artifacts are
+# intentionally versioned under experiments/data/results and experiments/output.
+experiments/output/mlflow/
+experiments/output/jobs/
+experiments/output/logs/
+*.pid
+*.log
+
+# OS/editor metadata
+.DS_Store
+Thumbs.db
+*.Zone.Identifier
+
+# Local-only cleanup archive, if created inside the repository by mistake.
+.local_archive/
