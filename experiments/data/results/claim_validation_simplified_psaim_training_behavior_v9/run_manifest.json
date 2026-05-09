@@ -1,0 +1,28 @@
+{
+  "runtime": {
+    "seeds": 5,
+    "train_episodes": 100,
+    "eval_episodes": 6,
+    "horizon": 96,
+    "queue_capacity": 12,
+    "visible_queue": 5,
+    "alternating_block": 24,
+    "use_mlflow": true,
+    "tracking_uri": "http://127.0.0.1:5001",
+    "experiment_name": "cisose-rl-proxy-evaluation",
+    "eval_adapt": false,
+    "paper_revision": "proxy-study-claim-validation"
+  },
+  "methods": [
+    "psaim_lite"
+  ],
+  "config_overrides": {
+    "intrinsic_scale": 0.001,
+    "lambda_aleatoric": 3.0,
+    "alpha_gate": 0.16,
+    "sigma0_sq": 0.05,
+    "epistemic_prior_floor": 0.35
+  },
+  "probe_states_per_regime": 12,
+  "checkpoint_every": 25
+}
