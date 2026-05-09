@@ -1,0 +1,57 @@
+{
+  "name": "experiment_1_proxy_stress_test",
+  "study_type": "proxy_evaluation",
+  "claim_scope": "mechanism_validation_only",
+  "environment": {
+    "type": "single_node_two_resource_proxy",
+    "resource_dimensions": ["cpu", "memory"],
+    "queue_capacity": 12,
+    "visible_queue": 5,
+    "episode_horizon_steps": 96,
+    "actions": ["allocate", "defer", "reject"],
+    "task_properties": {
+      "heterogeneous_demands": true,
+      "heterogeneous_durations": true,
+      "non_preemptive": true
+    }
+  },
+  "methods": [
+    "heuristic_sjf_bestfit",
+    "deeprm_inspired_pg",
+    "plain_dqn"
+  ],
+  "stress_protocol": {
+    "apply_stress_at_training": false,
+    "apply_stress_at_evaluation": true,
+    "severity_levels": ["low", "medium", "high"],
+    "scenarios": [
+      "observation_noise",
+      "reward_corruption",
+      "distribution_shift",
+      "co_tenant_interference",
+      "co_tenant_matched_load_control"
+    ]
+  },
+  "metrics": {
+    "primary": ["average_slowdown"],
+    "secondary": [
+      "mean_completion_time",
+      "p95_completion_time",
+      "utilization",
+      "task_failure_rate",
+      "degradation_pct"
+    ]
+  },
+  "reporting": {
+    "random_seeds": 10,
+    "train_split": "disjoint_seed_family_train",
+    "validation_split": "disjoint_seed_family_validation",
+    "test_split": "disjoint_seed_family_test",
+    "interval_estimate": "95_percent_bootstrap_ci",
+    "hyperparameter_budget": "matched_across_learned_methods"
+  },
+  "mlflow_tags": {
+    "experiment_type": "stress_test",
+    "paper_revision": "paper-final-claim-aligned-v3"
+  }
+}

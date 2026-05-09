@@ -1,0 +1,62 @@
+{
+  "style": {
+    "font_family": "DejaVu Serif",
+    "accent_palette": "seaborn_colorblind",
+    "line_width": 2.2,
+    "marker_size": 6.0,
+    "panel_label_weight": "bold",
+    "export_order": ["pdf", "svg", "png"]
+  },
+  "figures": [
+    {
+      "id": "fig_1_proxy_pipeline",
+      "title": "Proxy environment and observability pipeline schematic",
+      "source": "programmatic",
+      "outputs": ["pdf", "svg", "png"]
+    },
+    {
+      "id": "fig_2_robustness_degradation",
+      "title": "Robustness degradation under stress",
+      "source": "experiments/data/results/paper_final_claim_aligned_v3/stress_robustness.csv",
+      "outputs": ["pdf", "svg", "png"]
+    },
+    {
+      "id": "fig_3_psaim_signals",
+      "title": "Simplified PSAIM uncertainty signals across hidden regimes",
+      "source": "experiments/data/results/paper_final_claim_aligned_v3/psaim_signals.csv",
+      "outputs": ["pdf", "svg", "png"]
+    },
+    {
+      "id": "fig_4_downstream_comparison",
+      "title": "Downstream clean and stressed performance comparison",
+      "source": "experiments/data/results/paper_final_claim_aligned_v3/downstream_performance.csv",
+      "outputs": ["pdf", "svg", "png"]
+    },
+    {
+      "id": "fig_5_adaptation_lag",
+      "title": "Adaptation lag after regime transitions",
+      "source": "experiments/data/results/paper_final_claim_aligned_v3/adaptation_lag.csv",
+      "outputs": ["pdf", "svg", "png"]
+    }
+  ],
+  "tables": [
+    {
+      "id": "table_experiment_1",
+      "title": "Experiment 1 robustness metrics",
+      "source": "experiments/data/results/paper_final_claim_aligned_v3/stress_robustness.csv"
+    },
+    {
+      "id": "table_experiment_2",
+      "title": "Experiment 2 downstream comparison",
+      "source": "experiments/data/results/paper_final_claim_aligned_v3/downstream_performance.csv"
+    },
+    {
+      "id": "table_appendix_ablations",
+      "title": "Appendix ablation summary",
+      "source": [
+        "experiments/data/results/paper_final_claim_aligned_v3/downstream_performance.csv",
+        "experiments/data/results/paper_final_claim_aligned_v3/adaptation_lag.csv"
+      ]
+    }
+  ]
+}

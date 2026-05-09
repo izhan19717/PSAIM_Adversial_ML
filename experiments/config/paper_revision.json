@@ -1,0 +1,18 @@
+{
+  "paper_title": "Principled Learning for Service Orchestration: A Research Agenda",
+  "revision_focus": "paper_final_claim_aligned_proxy_evaluation",
+  "empirical_scope": "simplified_proxy_study",
+  "paper_text_assets": [
+    "paper/CISOSE_Paper_RL_2.pdf",
+    "docs/REPRODUCIBILITY.md",
+    "docs/RESULTS_MAP.md"
+  ],
+  "acceptance_thresholds": [
+    "learned_rl_baselines_degrade_under_four_proxy_stressors",
+    "simplified_psaim_directionally_separates_hidden_entropy_regimes",
+    "simplified_psaim_beats_plain_dqn_under_stressed_proxy_evaluation",
+    "simplified_psaim_beats_sjf_on_average_slowdown_and_failure_rate_under_duration_misreport",
+    "uniform_random_sjf_rejection_control_does_not_reproduce_psaim_duration_misreport_advantage",
+    "claims_remain_explicitly_at_proxy_study_level"
+  ]
+}

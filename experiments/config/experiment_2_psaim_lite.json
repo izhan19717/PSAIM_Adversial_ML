@@ -1,0 +1,74 @@
+{
+  "name": "experiment_2_psaim_lite",
+  "study_type": "proxy_evaluation",
+  "claim_scope": "psaim_inspired_mechanism_validation",
+  "agent": {
+    "name": "simplified_PSAIM",
+    "calibrated_proxy_hyperparameters": {
+      "ensemble_size": 5,
+      "probe_horizon": 3,
+      "intrinsic_scale": 0.001,
+      "lambda_aleatoric": 3.0,
+      "alpha_gate": 0.16,
+      "sigma0_sq": 0.05,
+      "epistemic_prior_floor": 0.35,
+      "gradient_update_interval": 4
+    },
+    "deviations_from_section_vi": [
+      "scalar_q_heads_replace_distributional_quantile_heads",
+      "calibrated_raw_next_state_variance_with_action_local_excess_baselining_replaces_probe_augmented_aleatoric_detector"
+    ],
+    "ablation_set": [
+      "no_aleatoric_penalty",
+      "no_epistemic_gate",
+      "no_window_freezing"
+    ]
+  },
+  "environment": {
+    "type": "single_node_two_resource_proxy",
+    "resource_dimensions": ["cpu", "memory"],
+    "hidden_regime_blocks": true,
+    "regimes": {
+      "low_entropy": {
+        "arrivals": "periodic",
+        "demand_variance": "narrow",
+        "duration_variance": "low"
+      },
+      "high_entropy": {
+        "arrivals": "bursty_heavy_tailed",
+        "demand_variance": "broad",
+        "duration_variance": "high"
+      }
+    }
+  },
+  "comparators": [
+    "heuristic_sjf_bestfit",
+    "deeprm_inspired_pg",
+    "plain_dqn",
+    "dqn_rnd",
+    "psaim_lite",
+    "psaim_no_aleatoric",
+    "psaim_no_gate",
+    "psaim_no_freezing"
+  ],
+  "metrics": {
+    "signal_level": ["V_epi", "V_ale", "r_int"],
+    "task_level": [
+      "average_slowdown",
+      "mean_completion_time",
+      "p95_completion_time",
+      "utilization",
+      "task_failure_rate",
+      "adaptation_lag_steps"
+    ]
+  },
+  "reporting": {
+    "random_seeds": 10,
+    "interval_estimate": "95_percent_bootstrap_ci",
+    "hyperparameter_budget": "matched_across_learned_methods"
+  },
+  "mlflow_tags": {
+    "experiment_type": "psaim_lite",
+    "paper_revision": "paper-final-claim-aligned-v3"
+  }
+}
