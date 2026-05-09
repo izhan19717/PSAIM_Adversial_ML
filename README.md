@@ -26,7 +26,7 @@ The study is deliberately scoped: it is a single-node, two-resource proxy for se
 - Mechanism-control report: `experiments/output/c5_mechanism_controls_v1/C5_MECHANISM_CONTROL_RESULTS.md`
 - Signal-switch audit: `experiments/output/c6_signal_switch_audit_v2_strict/C6_SIGNAL_SWITCH_AUDIT.md`
 
-The `c4`/`c5`/`c6` prefixes are internal artifact-lineage labels from successive claim-audit passes; they are not official reviewer-round labels.
+The `c4`/`c5`/`c6` prefixes are internal artifact-lineage labels from successive claim-audit passes.
 
 ## Quick Start
 
