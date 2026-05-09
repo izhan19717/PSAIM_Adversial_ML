@@ -425,7 +425,7 @@ def experiment_statuses(rows: pd.DataFrame, reward_pairs: pd.DataFrame, misrepor
     )
 
     lines.append(
-        "Long-horizon regime drift: skipped in this C4 bundle because the requested 5x training and 5x evaluation protocol is substantially more expensive than the first two priority experiments. "
+        "Long-horizon regime drift: skipped in this positive-demonstration bundle because the 5x training and 5x evaluation protocol is substantially more expensive than the first two priority experiments. "
         "No result is claimed for the freezing/gate long-horizon hypothesis."
     )
     return lines
@@ -445,7 +445,7 @@ def write_outputs(rows: pd.DataFrame, output_dir: Path, args: argparse.Namespace
     (output_dir / "c4_duration_misreport_pairs.md").write_text(to_markdown_table(misreport_pairs), encoding="utf-8")
 
     lines = [
-        "# C4 Positive Demonstration Experiments",
+        "# Positive-Demonstration Follow-Up Experiments",
         "",
         "All reported intervals are 95% nonparametric bootstrap confidence intervals over 10 seeds unless otherwise noted. "
         "Paired comparisons use same-seed paired bootstrap differences with 5000 resamples. Negative paired differences mean simplified PSAIM is lower/better.",
@@ -479,7 +479,7 @@ def write_outputs(rows: pd.DataFrame, output_dir: Path, args: argparse.Namespace
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run C4 positive-demonstration experiments.")
+    parser = argparse.ArgumentParser(description="Run positive-demonstration follow-up experiments.")
     parser.add_argument("--results-dir", default=str(PROJECT_ROOT / "experiments" / "data" / "results" / "c4_positive_demo_v1"))
     parser.add_argument("--seeds", type=int, default=10)
     parser.add_argument("--train-episodes", type=int, default=100)
@@ -537,7 +537,7 @@ def main() -> None:
                 if not subset.empty:
                     mlflow.log_metric(f"reward_high_{method}_slowdown", float(subset["average_slowdown"].mean()))
                     mlflow.log_metric(f"reward_high_{method}_degradation_pct", float(subset["degradation_pct"].mean()))
-        print(f"Wrote C4 outputs to {output_dir}")
+        print(f"Wrote positive-demonstration outputs to {output_dir}")
     finally:
         if parent_ctx is not None and mlflow is not None:
             mlflow.end_run()

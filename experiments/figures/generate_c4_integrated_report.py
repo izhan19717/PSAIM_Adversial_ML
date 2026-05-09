@@ -217,7 +217,7 @@ def plot_initial_reward_high(initial_df: pd.DataFrame) -> None:
     plot_bar_with_ci(axes[1], df, methods, "degradation_pct", "High Reward Corruption: Degradation")
     axes[1].axhspan(0, 50, color="#54a24b", alpha=0.10, label="target 0-50%")
     axes[1].legend(loc="upper left")
-    fig.suptitle("Initial C4 Reward-Corruption Result Refutes the High-Severity Hypothesis")
+    fig.suptitle("Initial Reward-Corruption Result Refutes the High-Severity Hypothesis")
     fig.tight_layout()
     save_figure(fig, "fig_c4_1_initial_reward_corruption")
     plt.close(fig)
@@ -326,7 +326,7 @@ def plot_online_and_drift(extended_df: pd.DataFrame) -> None:
     fig, axes = plt.subplots(1, 2, figsize=(10.5, 4.0))
     plot_bar_with_ci(axes[0], online, ["plain_dqn", "dqn_rnd", "psaim_lite"], "average_slowdown", "Online High Reward Corruption")
     plot_bar_with_ci(axes[1], drift, ["psaim_lite", "psaim_no_gate", "psaim_no_freezing"], "average_slowdown", "Long-Horizon Monotonic Drift")
-    fig.suptitle("Secondary C4 Results: Online Reward Adaptation and Drift Ablations")
+    fig.suptitle("Secondary Results: Online Reward Adaptation and Drift Ablations")
     fig.tight_layout()
     save_figure(fig, "fig_c4_4_online_reward_and_long_drift")
     plt.close(fig)
@@ -372,16 +372,16 @@ def build_integrated_report(initial_df: pd.DataFrame, extended_df: pd.DataFrame)
     )
 
     lines: List[str] = [
-        "# Integrated C4 Empirical Report",
+        "# Integrated Positive-Demonstration Empirical Report",
         "",
-        "This report integrates the initial C4 positive-demonstration run and the later reward-corruption/long-horizon-drift extension. All values are 10-seed means with 95% nonparametric bootstrap confidence intervals. Paired comparisons use same-seed paired bootstrap differences with 5000 resamples. Negative paired differences mean the first method listed is lower/better.",
+        "This report integrates the initial positive-demonstration run and the later reward-corruption/long-horizon-drift extension. All values are 10-seed means with 95% nonparametric bootstrap confidence intervals. Paired comparisons use same-seed paired bootstrap differences with 5000 resamples. Negative paired differences mean the first method listed is lower/better.",
         "",
         "## Executive Verdict",
         "",
         "| Claim target | Status | Principal-scientist reading |",
         "| - | - | - |",
         "| PSAIM beats or statistically ties SJF in at least one operational regime | Strongly supported | Duration-misreporting breaks SJF's shortest-job ordering assumption. Simplified PSAIM has significantly lower average slowdown at low, medium, and high misreport severities. |",
-        "| High-severity reward-corruption robustness from intrinsic reward | Refuted / not supported | Initial C4 and the later high-severity training-time sweep do not show PSAIM degradation in the desired 0-50% range. At high severity, PSAIM and DQN both collapse or are statistically indistinguishable. |",
+        "| High-severity reward-corruption robustness from intrinsic reward | Refuted / not supported | The initial run and the later high-severity training-time sweep do not show PSAIM degradation in the desired 0-50% range. At high severity, PSAIM and DQN both collapse or are statistically indistinguishable. |",
         "| Low-severity reward-corruption robustness | Supported | In the training-time reward sweep, PSAIM has much lower slowdown, degradation, task-failure rate, and p95 completion than DQN at low reward-corruption severity. |",
         "| Online high reward-corruption adaptation | Partially supported | PSAIM has a statistically lower stressed slowdown than DQN, but degradation, failure-rate, and p95 differences are not decisive. |",
         "| Long-horizon drift gate/freezing mechanisms | Weak / partial | No-gate is not worse than full PSAIM. No-freezing is directionally worse, but paired CIs cross zero. This is not strong evidence that gate/freezing are load-bearing. |",
@@ -395,7 +395,7 @@ def build_integrated_report(initial_df: pd.DataFrame, extended_df: pd.DataFrame)
         "- Do not claim: `Simplified PSAIM is robust to severe training-time reward corruption.`",
         "- Do not claim: `The gate is load-bearing under long-horizon drift.`",
         "",
-        "## Initial C4: High-Severity Reward-Corruption Robustness",
+        "## Initial Follow-Up: High-Severity Reward-Corruption Robustness",
         "",
         "Hypothesis tested: PSAIM's intrinsic-reward signal is less coupled to corrupted extrinsic reward than bare DQN, so PSAIM should degrade less than DQN under severe reward corruption. The target positive demonstration was PSAIM degradation in the 0-50% range while DQN remains strongly degraded.",
         "",
@@ -405,9 +405,9 @@ def build_integrated_report(initial_df: pd.DataFrame, extended_df: pd.DataFrame)
         "",
         to_markdown_table(initial_reward_pair),
         "",
-        "Reading: refuted. Initial C4 shows PSAIM slowdown `14.850 [11.956, 17.237]` and degradation `352.924% [256.663, 434.635]`, while DQN slowdown is `12.801 [9.728, 15.655]` and degradation `274.814% [190.368, 351.466]`. The paired PSAIM-DQN differences are not decisive, and the PSAIM degradation is far outside the desired 0-50% band.",
+        "Reading: refuted. The initial run shows PSAIM slowdown `14.850 [11.956, 17.237]` and degradation `352.924% [256.663, 434.635]`, while DQN slowdown is `12.801 [9.728, 15.655]` and degradation `274.814% [190.368, 351.466]`. The paired PSAIM-DQN differences are not decisive, and the PSAIM degradation is far outside the desired 0-50% band.",
         "",
-        "## Initial C4: Heuristic-Breaking Duration Misreporting",
+        "## Initial Follow-Up: Heuristic-Breaking Duration Misreporting",
         "",
         "Hypothesis tested: when observed job durations are biased so SJF's shortest-job assumption is violated, PSAIM should remain robust while SJF degrades.",
         "",
@@ -419,7 +419,7 @@ def build_integrated_report(initial_df: pd.DataFrame, extended_df: pd.DataFrame)
         "",
         "Reading: strongly supported for average slowdown and degradation. PSAIM beats SJF at all three severities with paired CIs entirely below zero. The strongest paper claim should be framed around average slowdown and failure rate. Caveat: SJF still has lower p95 completion time, so we should not claim PSAIM dominates every metric.",
         "",
-        "## Extended C4: Reward-Corruption Training-Time Sweep",
+        "## Extended Follow-Up: Reward-Corruption Training-Time Sweep",
         "",
         "This run repeats reward corruption at low, medium, and high severities with PSAIM hyperparameters unchanged.",
         "",
@@ -431,7 +431,7 @@ def build_integrated_report(initial_df: pd.DataFrame, extended_df: pd.DataFrame)
         "",
         "Reading: low severity is supported; medium and high are not. At low severity, PSAIM-DQN slowdown difference is `-2.066 [-4.137, -0.653]` and degradation difference is `-59.725 [-117.389, -18.968]`. At high severity, PSAIM-DQN slowdown difference is `-0.117 [-4.754, 4.386]`, which is not decisive, and degradation remains around `290.702%` for PSAIM. This means the intrinsic signal is not enough to protect the agent from severe reward-channel poisoning.",
         "",
-        "## Extended C4: Online High Reward-Corruption Adaptation",
+        "## Extended Follow-Up: Online High Reward-Corruption Adaptation",
         "",
         "This variant clean-trains agents and then allows online adaptation during high reward-corruption evaluation.",
         "",
@@ -443,7 +443,7 @@ def build_integrated_report(initial_df: pd.DataFrame, extended_df: pd.DataFrame)
         "",
         "Reading: partially supported. PSAIM has lower slowdown than DQN with paired difference `-0.092 [-0.167, -0.012]`, but degradation, failure-rate, and p95 completion-time differences are not decisive. This is a narrow result, not a broad reward-corruption robustness result.",
         "",
-        "## Extended C4: Long-Horizon Monotonic Drift",
+        "## Extended Follow-Up: Long-Horizon Monotonic Drift",
         "",
         "This run uses 5x longer training exposure and a 5x longer monotonic-drift evaluation episode. It compares full simplified PSAIM against no-gate and no-freezing ablations.",
         "",
@@ -488,7 +488,7 @@ def main() -> None:
 
     initial_df.to_csv(OUTPUT_DIR / "initial_c4_raw_results.csv", index=False)
     extended_df.to_csv(OUTPUT_DIR / "extended_c4_raw_results.csv", index=False)
-    print(f"Wrote integrated C4 report to {OUTPUT_DIR}")
+    print(f"Wrote integrated follow-up report to {OUTPUT_DIR}")
     print(f"Wrote figures to {FIGURE_DIR}")
 
 

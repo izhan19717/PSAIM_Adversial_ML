@@ -10,7 +10,7 @@ This directory contains the reproducible proxy-study implementation used by the 
 - `figures/`: deterministic figure-generation code.
 - `tables/`: deterministic table-generation code.
 - `mlflow/`: isolated local MLflow helper scripts.
-- `output/`: final paper-ready figures, tables, and reviewer-control reports.
+- `output/`: final paper-ready figures, tables, and internal claim-audit reports.
 
 ## Main Commands
 
@@ -41,7 +41,7 @@ python3 experiments/tables/generate_tables.py \
   --output-dir experiments/output/tables_reproduced
 ```
 
-Run the reviewer-control studies:
+Run the internal mechanism-control and signal-audit studies:
 
 ```bash
 python3 experiments/run_c5_mechanism_controls.py \

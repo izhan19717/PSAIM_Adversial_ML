@@ -1,8 +1,8 @@
 {
   "results_dir": "experiments/data/results/c6_signal_switch_audit_v2_strict",
   "paper_output_dir": "experiments/output/c6_signal_switch_audit_v2_strict",
-  "c4_reference_dir": "/home/izhan/CISOSE RL Experimentations/experiments/data/results/paper_final_claim_aligned_v3",
-  "c5_reference_dir": "/home/izhan/CISOSE RL Experimentations/experiments/data/results/c5_mechanism_controls_v1",
+  "c4_reference_dir": "experiments/data/results/paper_final_claim_aligned_v3",
+  "c5_reference_dir": "experiments/data/results/c5_mechanism_controls_v1",
   "existing_c6_rerun_dir": "experiments/data/results/c6_signal_switch_exact_exp2_v1",
   "seeds": 10,
   "train_episodes": 100,
@@ -13,6 +13,6 @@
   "alternating_block": 24,
   "tracking_uri": "http://127.0.0.1:5001",
   "experiment_name": "cisose-rl-proxy-evaluation",
-  "run_name": "c6_signal_switch_audit_v2_strict_corrected",
-  "use_mlflow": true
+  "run_name": "c6_signal_switch_audit",
+  "use_mlflow": false
 }

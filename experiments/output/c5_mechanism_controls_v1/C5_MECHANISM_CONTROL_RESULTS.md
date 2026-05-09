@@ -1,4 +1,4 @@
-# C5 PSAIM Mechanism-Control Experiments
+# PSAIM Mechanism-Control Follow-Up Experiments
 
 All experiments use the existing single-node, two-resource proxy environment and existing simplified PSAIM hyperparameters. The simulator and duration-misreport workload generator were not changed. Values are 10-seed means with 95% nonparametric bootstrap CIs unless this was a smoke run with fewer seeds. Paired comparisons use same-seed paired bootstrap with 5000 resamples; negative paired differences mean the left method is lower/better.
 
@@ -118,7 +118,7 @@ Hypothesis: PSAIM's epistemic-aleatoric decomposition is responsible for its beh
 
 ### Experiment B Interpretation
 
-Status: mixed and claim-limiting. Simplified PSAIM itself does not show the strict positive-low / negative-high intrinsic-reward sign switch in this C5 signal audit, so this run cannot support the paper's strict sign-switch wording. PSAIM-RawVar matches or improves the downstream slowdown/rejection behavior, which means the explicit decomposition is not shown to be operationally load-bearing for the duration-misreport advantage under this proxy.
+Status: mixed and claim-limiting. Simplified PSAIM itself does not show the strict positive-low / negative-high intrinsic-reward sign switch in this mechanism-control signal audit, so this run cannot support the paper's strict sign-switch wording. PSAIM-RawVar matches or improves the downstream slowdown/rejection behavior, which means the explicit decomposition is not shown to be operationally load-bearing for the duration-misreport advantage under this proxy.
 
 ## Protocol Notes
 

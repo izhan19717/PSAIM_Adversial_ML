@@ -271,7 +271,7 @@ def build_agent(method: str, state_dim: int, action_dim: int, seed: int):
     if method.startswith("sjf_r_"):
         probability = float(method.removeprefix("sjf_r_").replace("p", "."))
         return SJFStaticRejectAgent(probability, action_dim=action_dim, seed=seed + int(round(1000 * probability)))
-    raise ValueError(f"Unknown C5 method: {method}")
+    raise ValueError(f"Unknown mechanism-control method: {method}")
 
 
 def is_learned_agent(agent) -> bool:
@@ -751,7 +751,7 @@ def experiment_b_status(raw_pairs: pd.DataFrame, switch: pd.DataFrame) -> str:
         )
         return (
             "mixed and claim-limiting. Simplified PSAIM itself does not show the strict positive-low / "
-            "negative-high intrinsic-reward sign switch in this C5 signal audit, so this run cannot "
+            "negative-high intrinsic-reward sign switch in this mechanism-control signal audit, so this run cannot "
             "support the paper's strict sign-switch wording. "
             f"{operational}, which means the explicit decomposition is not shown to be operationally "
             "load-bearing for the duration-misreport advantage under this proxy."
@@ -809,7 +809,7 @@ def write_outputs(
         (output_dir / f"{name}.md").write_text(to_markdown_table(table), encoding="utf-8")
 
     lines = [
-        "# C5 PSAIM Mechanism-Control Experiments",
+        "# PSAIM Mechanism-Control Follow-Up Experiments",
         "",
         "All experiments use the existing single-node, two-resource proxy environment and existing simplified PSAIM hyperparameters. "
         "The simulator and duration-misreport workload generator were not changed. Values are 10-seed means with 95% nonparametric bootstrap CIs unless this was a smoke run with fewer seeds. "
@@ -864,7 +864,7 @@ def write_outputs(
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run C5 mechanism-control experiments for PSAIM.")
+    parser = argparse.ArgumentParser(description="Run mechanism-control follow-up experiments for PSAIM.")
     parser.add_argument("--results-dir", default=str(PROJECT_ROOT / "experiments" / "data" / "results" / "c5_mechanism_controls_v1"))
     parser.add_argument("--paper-output-dir", default=str(PROJECT_ROOT / "experiments" / "output" / "c5_mechanism_controls_v1"))
     parser.add_argument("--seeds", type=int, default=10)
@@ -921,8 +921,8 @@ def main() -> None:
             mlflow.log_artifacts(str(results_dir), artifact_path="c5_mechanism_controls")
             mlflow.log_metric("c5_duration_rows", float(len(results)))
             mlflow.log_metric("c5_signal_rows", float(len(signals)))
-        print(f"Wrote C5 outputs to {results_dir}")
-        print(f"Wrote paper-facing C5 outputs to {paper_output_dir}")
+        print(f"Wrote mechanism-control outputs to {results_dir}")
+        print(f"Wrote paper-facing mechanism-control outputs to {paper_output_dir}")
     finally:
         if parent_ctx is not None and mlflow is not None:
             mlflow.end_run()

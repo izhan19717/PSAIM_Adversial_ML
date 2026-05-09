@@ -91,7 +91,7 @@ def signal_long_to_decisions(df: pd.DataFrame, source: str) -> pd.DataFrame:
     if "metric" in df.columns and "value" in df.columns:
         metric_count = max(1, int(df["metric"].nunique()))
         df = df.reset_index(drop=True)
-        # Older C4 artifacts did not store eval_episode. The signal writer emits
+        # Older signal artifacts did not store eval_episode. The signal writer emits
         # one contiguous metric bundle per decision, so this synthetic identifier
         # prevents repeated episode-step/action tuples from being collapsed.
         df["_decision_id"] = np.arange(len(df)) // metric_count
@@ -131,11 +131,11 @@ def load_reference_signals(c4_dir: Path, c5_dir: Path) -> Tuple[pd.DataFrame, pd
     c4_path = c4_dir / "psaim_signals.csv"
     c5_path = c5_dir / "c5_signal_separation_raw.csv"
     if not c4_path.exists():
-        raise FileNotFoundError(f"Missing C4 reference signal artifact: {c4_path}")
+        raise FileNotFoundError(f"Missing original reference signal artifact: {c4_path}")
     if not c5_path.exists():
-        raise FileNotFoundError(f"Missing C5 reference signal artifact: {c5_path}")
-    c4 = signal_long_to_decisions(pd.read_csv(c4_path), "C4 original artifact")
-    c5 = signal_long_to_decisions(pd.read_csv(c5_path), "C5 signal audit")
+        raise FileNotFoundError(f"Missing mechanism-control reference signal artifact: {c5_path}")
+    c4 = signal_long_to_decisions(pd.read_csv(c4_path), "original signal artifact")
+    c5 = signal_long_to_decisions(pd.read_csv(c5_path), "mechanism-control signal audit")
     return c4, c5
 
 
@@ -143,7 +143,7 @@ def run_exact_c4_signal_protocol(runtime: RuntimeConfig) -> pd.DataFrame:
     signal_rows: List[Dict[str, object]] = []
     config = make_experiment_2_config()
     for seed in range(runtime.seeds):
-        print(f"[c6-c4-rerun] seed {seed}", flush=True)
+        print(f"[signal-rerun] seed {seed}", flush=True)
         set_global_seeds(seed + 300)
         template_env = ProxyAllocationEnv(
             seed=seed + 300,
@@ -192,7 +192,7 @@ def run_exact_c4_signal_protocol(runtime: RuntimeConfig) -> pd.DataFrame:
                     }
                 )
                 signal_rows.append(row)
-    return signal_long_to_decisions(pd.DataFrame(signal_rows), "C6 exact C4-protocol rerun")
+    return signal_long_to_decisions(pd.DataFrame(signal_rows), "focused original-protocol rerun")
 
 
 def summary_table(seed_summary: pd.DataFrame) -> pd.DataFrame:
@@ -216,10 +216,10 @@ def summary_table(seed_summary: pd.DataFrame) -> pd.DataFrame:
                 }
             )
     order = {
-        "C4 original artifact": 0,
-        "C6 focused C4-protocol rerun": 1,
-        "C6 strict original experiment_2 rerun": 1,
-        "C5 signal audit": 2,
+        "original signal artifact": 0,
+        "focused original-protocol rerun": 1,
+        "strict original-protocol rerun": 1,
+        "mechanism-control signal audit": 2,
     }
     table = pd.DataFrame(rows)
     table["_source_order"] = table["source"].map(order).fillna(99)
@@ -239,61 +239,61 @@ def config_table(args: argparse.Namespace, runtime: RuntimeConfig) -> pd.DataFra
     rows = [
         {
             "item": "lambda_aleatoric",
-            "C4 original": "3.0 via make_experiment_2_config()",
-            "C6 rerun": fmt(cfg.lambda_aleatoric, 3),
-            "C5 simplified PSAIM": "3.0 via make_experiment_2_config()",
+            "original signal run": "3.0 via make_experiment_2_config()",
+            "strict rerun": fmt(cfg.lambda_aleatoric, 3),
+            "mechanism-control simplified PSAIM": "3.0 via make_experiment_2_config()",
         },
         {
             "item": "sigma0_sq",
-            "C4 original": "0.05 via make_experiment_2_config()",
-            "C6 rerun": fmt(cfg.sigma0_sq, 3),
-            "C5 simplified PSAIM": "0.05 via make_experiment_2_config()",
+            "original signal run": "0.05 via make_experiment_2_config()",
+            "strict rerun": fmt(cfg.sigma0_sq, 3),
+            "mechanism-control simplified PSAIM": "0.05 via make_experiment_2_config()",
         },
         {
             "item": "alpha_gate",
-            "C4 original": "0.16 via make_experiment_2_config()",
-            "C6 rerun": fmt(cfg.alpha_gate, 3),
-            "C5 simplified PSAIM": "0.16 via make_experiment_2_config()",
+            "original signal run": "0.16 via make_experiment_2_config()",
+            "strict rerun": fmt(cfg.alpha_gate, 3),
+            "mechanism-control simplified PSAIM": "0.16 via make_experiment_2_config()",
         },
         {
             "item": "probe_horizon",
-            "C4 original": "3 via make_experiment_2_config()",
-            "C6 rerun": str(cfg.probe_horizon),
-            "C5 simplified PSAIM": "3 via make_experiment_2_config()",
+            "original signal run": "3 via make_experiment_2_config()",
+            "strict rerun": str(cfg.probe_horizon),
+            "mechanism-control simplified PSAIM": "3 via make_experiment_2_config()",
         },
         {
             "item": "train/eval episodes",
-            "C4 original": "100 / 8",
-            "C6 rerun": f"{runtime.train_episodes} / {runtime.eval_episodes}",
-            "C5 simplified PSAIM": "100 / 8",
+            "original signal run": "100 / 8",
+            "strict rerun": f"{runtime.train_episodes} / {runtime.eval_episodes}",
+            "mechanism-control simplified PSAIM": "100 / 8",
         },
         {
             "item": "horizon/block",
-            "C4 original": "96 / 24",
-            "C6 rerun": f"{runtime.horizon} / {runtime.alternating_block}",
-            "C5 simplified PSAIM": "96 / 24",
+            "original signal run": "96 / 24",
+            "strict rerun": f"{runtime.horizon} / {runtime.alternating_block}",
+            "mechanism-control simplified PSAIM": "96 / 24",
         },
         {
             "item": "seed/checkpoint path",
-            "C4 original": "agent/template/train seed = seed+300; eval seed = 4000+seed",
-            "C6 rerun": "same as C4 original",
-            "C5 simplified PSAIM": "agent seed base 83000+seed; train seed 84000+seed; eval seed 85000+seed",
+            "original signal run": "agent/template/train seed = seed+300; eval seed = 4000+seed",
+            "strict rerun": "same as original signal run",
+            "mechanism-control simplified PSAIM": "agent seed base 83000+seed; train seed 84000+seed; eval seed 85000+seed",
         },
         {
             "item": "code path",
-            "C4 original": "src.experiment_runner.experiment_2 full multi-agent loop",
-            "C6 rerun": (
+            "original signal run": "src.experiment_runner.experiment_2 full multi-agent loop",
+            "strict rerun": (
                 "src.experiment_runner.experiment_2 full multi-agent loop"
                 if getattr(args, "existing_c6_rerun_dir", "")
                 else "focused psaim_lite-only reproduction"
             ),
-            "C5 simplified PSAIM": "run_c5_mechanism_controls.py focused psaim_lite/rawvar signal audit",
+            "mechanism-control simplified PSAIM": "run_c5_mechanism_controls.py focused psaim_lite/rawvar signal audit",
         },
         {
             "item": "saved checkpoint",
-            "C4 original": "not available",
-            "C6 rerun": "fresh deterministic rerun",
-            "C5 simplified PSAIM": "fresh deterministic run",
+            "original signal run": "not available",
+            "strict rerun": "fresh deterministic rerun",
+            "mechanism-control simplified PSAIM": "fresh deterministic run",
         },
     ]
     return pd.DataFrame(rows)
@@ -302,13 +302,13 @@ def config_table(args: argparse.Namespace, runtime: RuntimeConfig) -> pd.DataFra
 def decide_resolution(summary: pd.DataFrame) -> str:
     rint = summary[summary["metric"].eq("r_int")].copy()
     lookup = {row["source"]: row for _, row in rint.iterrows()}
-    c4 = lookup.get("C4 original artifact")
-    c6 = lookup.get("C6 strict original experiment_2 rerun")
+    c4 = lookup.get("original signal artifact")
+    c6 = lookup.get("strict original-protocol rerun")
     if c6 is None:
-        c6 = lookup.get("C6 focused C4-protocol rerun")
-    c5 = lookup.get("C5 signal audit")
+        c6 = lookup.get("focused original-protocol rerun")
+    c5 = lookup.get("mechanism-control signal audit")
     if c4 is None or c6 is None:
-        return "c. C4 cannot be reproduced completely because the required summary rows are unavailable."
+        return "c. The original sign-switch measurement cannot be reproduced completely because the required summary rows are unavailable."
     c4_switch = float(c4["low_mean_raw"]) > 0.0 and float(c4["high_mean_raw"]) < 0.0
     c6_switch = float(c6["low_mean_raw"]) > 0.0 and float(c6["high_mean_raw"]) < 0.0
     c5_switch = c5 is not None and float(c5["low_mean_raw"]) > 0.0 and float(c5["high_mean_raw"]) < 0.0
@@ -318,18 +318,18 @@ def decide_resolution(summary: pd.DataFrame) -> str:
     )
     if c4_switch and c6_switch and c4_c6_close and not c5_switch:
         return (
-            "fragility finding; apply decision rule (b) for the paper. C4 is exactly reproducible with current code under the recovered C4 seed/protocol, "
-            "but C5 used the same PSAIM hyperparameters, episode length, and regime-block protocol with independently seeded checkpoints/workloads and did not reproduce the positive low-entropy sign. "
+            "fragility finding; apply decision rule (b) for the paper. The original sign-switch measurement is exactly reproducible with current code under the recovered seed/protocol, "
+            "but an independently seeded mechanism-control signal audit used the same PSAIM hyperparameters, episode length, and regime-block protocol and did not reproduce the positive low-entropy sign. "
             "The discrepancy is therefore not lambda/sigma/protocol drift; it is checkpoint/workload-seed sensitivity."
         )
     if c4_switch and c6_switch and not c5_switch:
         return (
-            "fragility finding; apply decision rule (b) for the paper. C4 is reproducible under the recovered original code path, "
-            "but C5 used the same PSAIM hyperparameters and evaluation protocol with an independently seeded checkpoint path and did not reproduce the positive low-entropy sign. "
+            "fragility finding; apply decision rule (b) for the paper. The original sign-switch measurement is reproducible under the recovered original code path, "
+            "but an independently seeded mechanism-control signal audit used the same PSAIM hyperparameters and evaluation protocol and did not reproduce the positive low-entropy sign. "
             "Therefore the sign-switch wording is not robust across runs and should be softened."
         )
     return (
-        "b. C4's sign switch is not robustly reproducible under the available protocol. "
+        "b. The sign switch is not robustly reproducible under the available protocol. "
         "The paper should not claim a clean or robust surprise-agnostic sign switch."
     )
 
@@ -355,9 +355,9 @@ def write_outputs(
     (output_dir / "c6_config_protocol_comparison.md").write_text(to_markdown_table(configs), encoding="utf-8")
     resolution = decide_resolution(summary)
     lines = [
-        "# C6 Surprise-Agnostic Switch Contradiction Audit",
+        "# Surprise-Agnostic Switch Reproducibility Audit",
         "",
-        "This audit reruns simplified PSAIM under the exact C4 signal-separation seed/protocol and compares it with the C4 and C5 signal artifacts already on disk. All CIs are 95% nonparametric bootstrap intervals over seed-level regime means. The simulator, agent, and hyperparameters were not modified.",
+        "This audit reruns simplified PSAIM under the exact original signal-separation seed/protocol and compares it with the original and mechanism-control signal artifacts already on disk. All CIs are 95% nonparametric bootstrap intervals over seed-level regime means. The simulator, agent, and hyperparameters were not modified.",
         "",
         "## Resolution",
         "",
@@ -374,21 +374,21 @@ def write_outputs(
         to_markdown_table(seed_values),
         "## Interpretation",
         "",
-        "- The C4 reference artifact and the C6 rerun use the recovered C4 seed/checkpoint path and produce the same aggregate sign pattern: low-entropy `r_int` is positive on average and high-entropy `r_int` is negative on average.",
-        "- The C5 simplified-PSAIM audit uses the same lambda, sigma0, alpha, probe horizon, episode length, and block length, but a different trained checkpoint path and evaluation workload seeds. Its aggregate low-entropy `r_int` is slightly negative.",
-        "- PSAIM-RawVar's much larger negative intrinsic values in C5 are expected from its different total-variance penalty formula; they do not imply that simplified PSAIM used a different lambda or sigma0.",
-        "- The seed-level table shows that the low-entropy sign is not uniformly positive across seeds even in the C4 artifact. Therefore, the safest paper wording is directional separation rather than a robust clean sign switch.",
+        "- The original reference artifact and the strict rerun use the recovered seed/checkpoint path and produce the same aggregate sign pattern: low-entropy `r_int` is positive on average and high-entropy `r_int` is negative on average.",
+        "- The independently seeded mechanism-control audit uses the same lambda, sigma0, alpha, probe horizon, episode length, and block length, but a different trained checkpoint path and evaluation workload seeds. Its aggregate low-entropy `r_int` is slightly negative.",
+        "- PSAIM-RawVar's much larger negative intrinsic values in the mechanism-control audit are expected from its different total-variance penalty formula; they do not imply that simplified PSAIM used a different lambda or sigma0.",
+        "- The seed-level table shows that the low-entropy sign is not uniformly positive across seeds even in the original artifact. Therefore, the safest paper wording is directional separation rather than a robust clean sign switch.",
         "",
         "## Paper Decision",
         "",
-        "Use the softened wording unless the paper explicitly ties the sign-switch statement to the C4 seed/protocol. Recommended replacement: `Simplified PSAIM shows directional separation in V_epi, V_ale, and gate values across hidden regimes; the sign of r_int is seed-sensitive in this proxy, so we do not claim a robust surprise-agnostic sign switch.`",
+        "Use the softened wording unless the paper explicitly ties the sign-switch statement to the original seed/protocol. Recommended replacement: `Simplified PSAIM shows directional separation in V_epi, V_ale, and gate values across hidden regimes; the sign of r_int is seed-sensitive in this proxy, so we do not claim a robust surprise-agnostic sign switch.`",
     ]
     (output_dir / "C6_SIGNAL_SWITCH_AUDIT.md").write_text("\n".join(lines), encoding="utf-8")
     (output_dir / "run_manifest.json").write_text(json.dumps(vars(args), indent=2), encoding="utf-8")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Resolve C4/C5 simplified-PSAIM signal-switch contradiction.")
+    parser = argparse.ArgumentParser(description="Resolve simplified-PSAIM signal-switch reproducibility.")
     parser.add_argument("--results-dir", default=str(PROJECT_ROOT / "experiments" / "data" / "results" / "c6_signal_switch_audit_v1"))
     parser.add_argument("--paper-output-dir", default=str(PROJECT_ROOT / "experiments" / "output" / "c6_signal_switch_audit_v1"))
     parser.add_argument("--c4-reference-dir", default=str(PROJECT_ROOT / "experiments" / "data" / "results" / "paper_final_claim_aligned_v3"))
@@ -396,7 +396,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--existing-c6-rerun-dir",
         default="",
-        help="Optional existing strict C6 rerun directory containing psaim_signals.csv; skips the focused rerun.",
+        help="Optional existing strict rerun directory containing psaim_signals.csv; skips the focused rerun.",
     )
     parser.add_argument("--seeds", type=int, default=10)
     parser.add_argument("--train-episodes", type=int, default=100)
@@ -443,14 +443,14 @@ def main() -> None:
         if args.existing_c6_rerun_dir:
             c6_path = Path(args.existing_c6_rerun_dir) / "psaim_signals.csv"
             if not c6_path.exists():
-                raise FileNotFoundError(f"Missing existing C6 rerun psaim_signals.csv: {c6_path}")
+                raise FileNotFoundError(f"Missing existing strict rerun psaim_signals.csv: {c6_path}")
             c6_decisions = signal_long_to_decisions(
                 pd.read_csv(c6_path),
-                "C6 strict original experiment_2 rerun",
+                "strict original-protocol rerun",
             )
         else:
             c6_decisions = run_exact_c4_signal_protocol(runtime)
-            c6_decisions["source"] = "C6 focused C4-protocol rerun"
+            c6_decisions["source"] = "focused original-protocol rerun"
         decisions = pd.concat([c4_decisions, c6_decisions, c5_decisions], ignore_index=True)
         seed_summary = seed_regime_summary(decisions)
         summary = summary_table(seed_summary)
@@ -467,8 +467,8 @@ def main() -> None:
                 key = str(row["source"]).lower().replace(" ", "_").replace("-", "_")
                 mlflow.log_metric(f"{key}_low_r_int", float(row["low_mean_raw"]))
                 mlflow.log_metric(f"{key}_high_r_int", float(row["high_mean_raw"]))
-        print(f"Wrote C6 outputs to {results_dir}")
-        print(f"Wrote paper-facing C6 outputs to {paper_output_dir}")
+        print(f"Wrote signal-switch audit outputs to {results_dir}")
+        print(f"Wrote paper-facing signal-switch audit outputs to {paper_output_dir}")
     finally:
         if parent_ctx is not None and mlflow is not None:
             mlflow.end_run()

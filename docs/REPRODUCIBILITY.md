@@ -36,7 +36,7 @@ The main paper-facing run is:
 experiments/data/results/paper_final_claim_aligned_v3/
 ```
 
-The reviewer-response mechanism controls are:
+The internal follow-up and mechanism-control artifacts are:
 
 ```text
 experiments/data/results/c4_positive_demo_v1/

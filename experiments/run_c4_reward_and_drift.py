@@ -385,7 +385,7 @@ def write_report(df: pd.DataFrame, output_dir: Path, args: argparse.Namespace) -
     (output_dir / "long_horizon_drift_pairs.md").write_text(to_markdown_table(drift_pairs), encoding="utf-8")
 
     lines = [
-        "# C4 Reward-Corruption and Long-Horizon Drift Extension",
+        "# Reward-Corruption and Long-Horizon Drift Follow-Up",
         "",
         "All intervals are 95% bootstrap intervals over 10 seeds. Paired comparisons use same-seed paired bootstrap with 5000 resamples. PSAIM hyperparameters are unchanged from the main experiments.",
         "",
@@ -418,7 +418,7 @@ def write_report(df: pd.DataFrame, output_dir: Path, args: argparse.Namespace) -
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run C4 reward-corruption extension and long-horizon drift experiments.")
+    parser = argparse.ArgumentParser(description="Run reward-corruption extension and long-horizon drift experiments.")
     parser.add_argument("--results-dir", default=str(PROJECT_ROOT / "experiments" / "data" / "results" / "c4_reward_drift_v1"))
     parser.add_argument("--seeds", type=int, default=10)
     parser.add_argument("--reward-train-episodes", type=int, default=100)
@@ -486,7 +486,7 @@ def main() -> None:
         write_report(df, output_dir, args)
         if args.use_mlflow and mlflow is not None:
             mlflow.log_artifacts(str(output_dir), artifact_path="c4_reward_drift")
-        print(f"Wrote C4 reward/drift outputs to {output_dir}")
+        print(f"Wrote reward/drift follow-up outputs to {output_dir}")
     finally:
         if parent_ctx is not None and mlflow is not None:
             mlflow.end_run()

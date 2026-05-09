@@ -2,6 +2,8 @@
 
 This file maps the final manuscript claims to the repository artifacts that support them.
 
+Note: directory prefixes such as `c4`, `c5`, and `c6` are internal artifact-lineage labels from successive claim-audit passes. They do not denote official reviewer rounds or externally requested reviewer responses.
+
 ## Section VII-B: Stress Fragility
 
 Primary data:

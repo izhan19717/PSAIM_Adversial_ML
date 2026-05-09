@@ -202,7 +202,7 @@ def build_experiment_1_agents(state_dim: int, action_dim: int, seed: int) -> Dic
 def make_experiment_2_config(**overrides: object) -> AgentConfig:
     """Return the simplified PSAIM/DQN hyperparameters used in the paper.
 
-    These values are deliberately centralized because the C4/C5/C6 control
+    These values are deliberately centralized because the follow-up control
     studies must use the same simplified PSAIM configuration as the main
     Section VII experiments. Override only for diagnostics, not for paper
     claims unless the override is explicitly reported.

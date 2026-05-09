@@ -1,4 +1,4 @@
-# C4 Positive Demonstration Experiments
+# Positive-Demonstration Follow-Up Experiments
 
 All reported intervals are 95% nonparametric bootstrap confidence intervals over 10 seeds unless otherwise noted. Paired comparisons use same-seed paired bootstrap differences with 5000 resamples. Negative paired differences mean simplified PSAIM is lower/better.
 
@@ -49,7 +49,7 @@ All reported intervals are 95% nonparametric bootstrap confidence intervals over
 
 - Reward-corruption robustness: refuted. Hypothesis: simplified PSAIM should degrade less than DQN under high reward corruption. Interpretation: simplified PSAIM mean degradation was 352.9% versus DQN 274.8%.
 - Heuristic-breaking duration misreporting: supported. Hypothesis: simplified PSAIM should beat or statistically tie SJF when reported durations invert the SJF ordering. Interpretation: low: PSAIM lower; medium: PSAIM lower; high: PSAIM lower.
-- Long-horizon regime drift: skipped in this C4 bundle because the requested 5x training and 5x evaluation protocol is substantially more expensive than the first two priority experiments. No result is claimed for the freezing/gate long-horizon hypothesis.
+- Long-horizon regime drift: skipped in this positive-demonstration bundle because the 5x training and 5x evaluation protocol is substantially more expensive than the first two priority experiments. No result is claimed for the freezing/gate long-horizon hypothesis.
 
 ## Protocol Notes
 

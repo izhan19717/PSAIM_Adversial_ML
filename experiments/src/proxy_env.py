@@ -26,7 +26,7 @@ class StressConfig:
     """Evaluation-time perturbations used by the proxy study.
 
     Stressors are intentionally parameterized in one place so paper tables,
-    reruns, and reviewer-control experiments all exercise the same simulator
+    reruns, and internal claim-audit experiments all exercise the same simulator
     rather than silently diverging across scripts.
     """
 

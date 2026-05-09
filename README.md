@@ -9,7 +9,7 @@ The study is deliberately scoped: it is a single-node, two-resource proxy for se
 - `experiments/src/`: single-node allocation environment and agents.
 - `experiments/run_proxy_experiments.py`: main Section VII stress, signal, downstream, and ablation experiments.
 - `experiments/run_c4_*.py`: reward-corruption, heuristic-breaking, action-distribution, and long-horizon drift extensions.
-- `experiments/run_c5_mechanism_controls.py`: reviewer-requested mechanism controls.
+- `experiments/run_c5_mechanism_controls.py`: internal mechanism controls for alternative explanations.
 - `experiments/run_c6_signal_switch_audit.py`: signal-switch reproducibility audit.
 - `experiments/data/results/`: final CSV artifacts and run manifests used for the paper.
 - `experiments/output/`: final paper tables, figures, and audit reports.
@@ -25,6 +25,8 @@ The study is deliberately scoped: it is a single-node, two-resource proxy for se
 - Heuristic-breaking report: `experiments/output/c4_integrated_final/C4_INTEGRATED_FINAL_REPORT.md`
 - Mechanism-control report: `experiments/output/c5_mechanism_controls_v1/C5_MECHANISM_CONTROL_RESULTS.md`
 - Signal-switch audit: `experiments/output/c6_signal_switch_audit_v2_strict/C6_SIGNAL_SWITCH_AUDIT.md`
+
+The `c4`/`c5`/`c6` prefixes are internal artifact-lineage labels from successive claim-audit passes; they are not official reviewer-round labels.
 
 ## Quick Start
 
@@ -71,7 +73,7 @@ The final paper-facing claims are intentionally narrow:
 - Simplified PSAIM exhibits directional uncertainty-signal separation across hidden entropy regimes.
 - Simplified PSAIM improves over plain DQN under the stressed downstream proxy evaluation, but does not beat SJF on the original clean/stressed evaluations.
 - Under duration misreporting, where SJF's ordering assumption is intentionally violated, simplified PSAIM beats SJF on average slowdown and failure rate.
-- C5 controls show the duration-misreport advantage is not reproduced by a uniform random SJF rejection prior at the same marginal rejection rate.
-- C5/C6 also limit the mechanism claim: the explicit epistemic/aleatoric decomposition is not empirically load-bearing for the duration-misreport advantage in this proxy, and the strict intrinsic-reward sign switch is seed-sensitive.
+- Internal mechanism controls show the duration-misreport advantage is not reproduced by a uniform random SJF rejection prior at the same marginal rejection rate.
+- Follow-up signal and ablation audits also limit the mechanism claim: the explicit epistemic/aleatoric decomposition is not empirically load-bearing for the duration-misreport advantage in this proxy, and the strict intrinsic-reward sign switch is seed-sensitive.
 
 For a claim-by-claim artifact map, see `docs/RESULTS_MAP.md`.

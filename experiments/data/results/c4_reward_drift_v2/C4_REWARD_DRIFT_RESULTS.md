@@ -1,4 +1,4 @@
-# C4 Reward-Corruption and Long-Horizon Drift Extension
+# Reward-Corruption and Long-Horizon Drift Follow-Up
 
 All intervals are 95% bootstrap intervals over 10 seeds. Paired comparisons use same-seed paired bootstrap with 5000 resamples. PSAIM hyperparameters are unchanged from the main experiments.
 
