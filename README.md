@@ -1,6 +1,6 @@
 # PSAIM Adversarial-ML Proxy Evaluation
 
-This repository contains the code, final result artifacts, and paper-ready figures for the empirical proxy study in **Principled Learning for Service Orchestration: A Research Agenda**.
+This repository contains the code, final result artifacts, and figures for the empirical proxy study in **Principled Learning for Service Orchestration: A Research Agenda**.
 
 The study is deliberately scoped: it is a single-node, two-resource proxy for service orchestration, not a production-orchestrator benchmark. Its purpose is to test mechanism-level claims about RL fragility under orchestration-like perturbations and about a simplified PSAIM realisation of uncertainty-aware intrinsic motivation.
 
