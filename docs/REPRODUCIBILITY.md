@@ -94,7 +94,7 @@ python3 experiments/run_proxy_experiments.py \
 
 Add `--use-mlflow` after starting the isolated server if you want run tracking.
 
-## Rerun Reviewer-Control Experiments
+## Rerun Controlled Experiments
 
 ```bash
 python3 experiments/run_c4_experiments.py \
